@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Products.css'
+import MineralFoundation from '../../assets/homeImages/MineralFoundation.svg'
+import BobbiFoundationHighlighter from '../../assets/homeImages/BobbiFoundation.svg'
+import FentyBeautyLipstick from '../../assets/homeImages/FentyBeautyLipstick.svg'
 
 const Products = () => {
   const [products,] = useState([
@@ -7,19 +10,19 @@ const Products = () => {
       id: 1,
       name: "Mineral Foundation",
       price: "₹250",
-      image: "https://placehold.co/412x412",
+      image: MineralFoundation,
     },
     {
       id: 2,
-      name: "Fenty Beauty Lipstick",
+      name: "Bobbi Foundation",
       price: "₹250",
-      image: "https://placehold.co/412x412",
+      image: BobbiFoundationHighlighter,
     },
     {
       id: 3,
-      name: "Bobbi Foundation Combo",
+      name: "Fenty Beauty Lipstick",
       price: "₹1500",
-      image: "https://placehold.co/412x412",
+      image: FentyBeautyLipstick,
     },
   ]);
 

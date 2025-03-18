@@ -10,7 +10,6 @@ import Img2 from '../../assets/Frame/img2.svg';
 import Img3 from '../../assets/Frame/img3.svg';
 import Products from './Products';
 import Shades from './Shades';
-import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
   return (
@@ -18,8 +17,6 @@ const Home = () => {
 
       <img className="lg:w-[100%] lg:h-[886px] object-cover" src={bgImage} />
       
-      <Navbar />
-
       <div className="w-[100%] h-[150px] lg:w-[100%] lg:h-[220px] relative bg-[#e99662] lg:overflow-hidden">
 
           <img className="h-10 lg:w-[71px] lg:h-[68px] left-10 lg:left-[233px] top-[52px] absolute" src={Piggybank} />
@@ -43,8 +40,8 @@ const Home = () => {
         <img className="w-[80%] ml-10 mt-5 lg:w-[494.67px] lg:h-[371px]" src={Img3} />
       </div>
 
-      <h1 className="absolute top-320 ml-7 lg:absolute lg:top-500 lg:left-140 text-white text-[44px] lg:text-[54px] font-normal font-['Baloo_2']">Summer is Calling!</h1>
-      <p className="absolute top-350 ml-7 lg:absolute lg:top-530 lg:left-50 lg:w-[80%] h-[215px] justify-start text-white text-[24px] lg:text-4xl font-normal font-['Alegreya_Sans_SC']">The hottest beauty deals of the season! ☀️ It’s time to refresh your look with our exclusive Summer Starts Sale, featuring stunning discounts on must-have cosmetics, skincare essentials, and more! Whether you're looking for the perfect lightweight foundation for a sun-kissed glow, bold lip shades to match your summer vibe, or hydrating skincare to beat the heat, we’ve got you covered!</p>
+      <h1 className="absolute top-275 ml-7 lg:absolute lg:top-475 lg:left-140 text-white text-[44px] lg:text-[54px] font-normal font-['Baloo_2']">Summer is Calling!</h1>
+      <p className="absolute top-300 ml-7 lg:absolute lg:top-500 lg:left-50 lg:w-[80%] h-[215px] justify-start text-white text-[24px] lg:text-4xl font-normal font-['Alegreya_Sans_SC']">The hottest beauty deals of the season! ☀️ It’s time to refresh your look with our exclusive Summer Starts Sale, featuring stunning discounts on must-have cosmetics, skincare essentials, and more! Whether you're looking for the perfect lightweight foundation for a sun-kissed glow, bold lip shades to match your summer vibe, or hydrating skincare to beat the heat, we’ve got you covered!</p>
       </div>
 
       <Shades />

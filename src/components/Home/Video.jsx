@@ -25,7 +25,7 @@ const Video = () => {
         src={Bg2} 
         alt="Video description" 
         controls 
-        autoPlay 
+        autoPlay
         muted
       >
       </video>
