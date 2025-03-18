@@ -24,11 +24,15 @@ const Video = () => {
         className="w-55 h-50 lg:w-[792.89px] lg:h-[446px] flex bottom-45 lg:top-0 ml-40 lg:ml-160 rounded-tr-[20px] lg:rounded-tr-[35px] rounded-bl-[20px] lg:rounded-bl-[35px] absolute" 
         src={Bg2} 
         alt="Video description" 
-        controls>
+        controls 
+        autoPlay 
+        muted
+      >
       </video>
 
 
-      <button className="w-20 h-10 ml-55 bottom-20 lg:w-[294px] lg:h-[60px] lg:ml-230 mt-10 mb-10 font-medium text-sm lg:text-[41px]  relative bg-[#f29d68] rounded-[40px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+
+      <button className="w-20 h-10 ml-55 bottom-20 lg:w-[294px] lg:h-[60px] lg:ml-230 mt-12 lg:mt-30 mb-10 font-medium text-sm lg:text-[41px]  relative bg-[#f29d68] rounded-[40px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
           Shop now
       </button>
       </div>
