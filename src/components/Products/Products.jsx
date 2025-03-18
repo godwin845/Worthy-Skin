@@ -61,12 +61,12 @@ const Products = () => {
   ];
 
   return (
-    <div className="bg-[#e5974d]">
+    <div className="bg-[#e5974d] p-6">
       <div>
 
-        <button className="mt-40 pl-15 h-[32.45px] justify-start text-black text-[50px] font-normal font-['Akatab']">
+        <h1 className="mt-40 pl-15 h-[32.45px] justify-start text-black text-[50px] font-normal font-['Akatab']">
           OUR SKIN PRODUCTS
-        </button>
+        </h1>
 
         <div className="mt-20 ml-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product) => (

@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import './Products.css'
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../redux/cart';
 import MineralFoundation from '../../assets/homeImages/MineralFoundation.svg'
 import BobbiFoundationHighlighter from '../../assets/homeImages/BobbiFoundation.svg'
 import FentyBeautyLipstick from '../../assets/homeImages/FentyBeautyLipstick.svg'
+import './Products.css'
+import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
-  const [products,] = useState([
+  const [products] = useState([
     {
       id: 1,
       name: "Mineral Foundation",
@@ -25,6 +28,16 @@ const Products = () => {
       image: FentyBeautyLipstick,
     },
   ]);
+
+  const dispatch = useDispatch();
+
+  const navigate = useNavigate();
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+    alert(`${product.name} added successfully!`);
+    navigate('/cart')
+  };
 
   return (
     <div className='bg-[#e99662]'>
@@ -50,7 +63,10 @@ const Products = () => {
               <p className="text-[16px] sm:text-[20px]">{product.price}</p>
             </div>
 
-            <button className="w-full h-[50px] sm:h-16 mt-5 mb-10 relative bg-[#f7a672] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+            <button
+              onClick={() => handleAddToCart(product)} // Add to cart when clicked
+              className="w-full h-[50px] sm:h-16 mt-5 mb-10 relative bg-[#f7a672] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden"
+            >
               <p className="absolute left-[50%] transform -translate-x-[50%] top-[50%] -translate-y-[50%] text-black text-lg sm:text-3xl font-bold font-['Akatab']">
                 Add to cart
               </p>
@@ -60,6 +76,6 @@ const Products = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Products;
