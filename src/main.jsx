@@ -4,6 +4,7 @@ import App from './App.jsx'
 import 'hamburgers/dist/hamburgers.css';
 import { Provider } from 'react-redux';
 import store from './redux/store.js';
+import 'animate.css';
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>

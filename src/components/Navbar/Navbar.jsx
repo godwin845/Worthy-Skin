@@ -1,33 +1,52 @@
 // src/components/Navbar.js
 import React from 'react';
 import { FiShoppingCart, FiUser } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux'; // Import useSelector to access Redux state
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux'; // Use useDispatch for dispatching actions
+import { logout } from '../../redux/auth'; // Import the logout action
 
 const Navbar = () => {
   // Get the cart items from Redux state
   const cartItems = useSelector(state => state.cart.cartItems);
+
+  // Get authentication status from Redux
+  const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
 
   // Calculate the total quantity of items in the cart
   const getTotalItemsAdded = () => {
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleUser = () => {
+    if (isAuthenticated) {
+      dispatch(logout()); // Logout if already authenticated
+      navigate('/login');
+    } else {
+      navigate('/user');
+    }
+  };
+
+  const totalItemsAdded = getTotalItemsAdded();
+
   return (
     <div className='absolute bottom-167 w-full'>
       <ul className='flex items-center gap-5 ml-40'>
         
-        <li><Link to='/user'><FiUser size={32} /></Link></li>
+        <li>
+          <Link onClick={handleUser}>
+            <FiUser size={32} />
+          </Link>
+        </li>
         
-        {/* Cart link with quantity */}
         <li>
           <Link to='/cart' className="relative">
             <FiShoppingCart size={32} />
-            
-            {/* Display the total quantity of items in the cart */}
-            {getTotalItemsAdded() > 0 && (
+            {totalItemsAdded > 0 && (
               <span className="absolute bottom-6 right-0 bg-red-500 text-white text-xs rounded-full px-1">
-                {getTotalItemsAdded()}
+                {totalItemsAdded}
               </span>
             )}
           </Link>
