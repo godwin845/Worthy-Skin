@@ -81,7 +81,7 @@ const Mascara = () => {
             <div className="absolute w-[518px] h-[175px] justify-start text-white text-3xl font-semibold font-['Akatab']">Elevate your beauty with a luminous touch! Our highlighters are designed to enhance your natural radiance, giving you that perfect glow from day to night. Whether you prefer a subtle shimmer or a bold, dewy finish, we have the perfect formula for you</div>
         </div>
 
-        <div className='pl-5 mb-5'>
+        <div className='pl-5 bg-[#f7a672] p-6'>
             <h1 className="mt-5 w-full h-[32.45px] justify-start text-black text-[35px] font-normal font-['Akatab']">OUR HIGHLIGHTER PRODUCTS</h1>
 
             <div className='mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
