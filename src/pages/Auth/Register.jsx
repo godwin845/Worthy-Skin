@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import LoginBg from '../../assets/LoginBg.svg'
 
 const Register = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(true);
 
   const navigate = useNavigate();
 
@@ -15,26 +15,20 @@ const Register = () => {
     navigate('/login');
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  if (!isModalOpen) return null; // Return nothing if modal is closed
-
   return (
-    <div className="fixed inset-0 bg-amber-600 bg-opacity-50 flex justify-center items-center z-50">
-      <div className="animate__animated animate__fadeInRight bg-white rounded-4xl p-8 w-[320px] max-w-[400px] relative">
-        <button
-          onClick={closeModal}
-          className="animate__animated animate__animated absolute top-2 right-2 text-gray-600 text-xl"
-        >
-          &times;
-        </button>
+    <div className="flex justify-center items-center min-h-screen bg-[#e99662] bg-opacity-50">
+      <div className="animate__animated animate__fadeInRight bg-white rounded-4xl p-8 w-[320px] max-w-[400px]"
+      style={{
+              backgroundImage: `url(${LoginBg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+      >
         <h1 className="text-center text-black text-[25px] font-bold font-['Merriweather_Sans']">Register</h1>
 
         <form onSubmit={handleSubmit}>
 
-        <div className="mt-5 w-full h-[43px] relative rounded-[30px] outline outline-offset-[-1px] outline-[#1e1e1e] overflow-hidden">
+          <div className="mt-5 w-full h-[43px] relative rounded-[30px] outline outline-offset-[-1px] outline-[#1e1e1e] overflow-hidden">
             <input
               type="text"
               className="w-full h-full pl-[20px] pr-[10px] text-[#3e3535] text-[13px] font-normal font-['Merriweather_Sans'] outline-none"

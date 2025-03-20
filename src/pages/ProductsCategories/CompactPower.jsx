@@ -3,62 +3,72 @@ import HighlighterBg from '../../assets/Foundation/HighlighterBg.svg'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { addToCart } from '../../redux/cart';
+import CompactPowerBg from '../../assets/CompactPower/CompactPowerBg.svg'
+import GGCompactPowder from '../../assets/CompactPower/GGCompactPowder.svg'
+import CamelCompactpowder from '../../assets/CompactPower/CamelCompactpowder.svg'
+import ChanelCompactPowder from '../../assets/CompactPower/ChanelCompactPowder.svg'
+import ChanelGlossyCompact from '../../assets/CompactPower/ChanelGlossyCompact.svg'
+import ChanelCompactPowder2 from '../../assets/CompactPower/ChanelCompactPowder2.svg'
+import PatrickTaCompactPowder from '../../assets/CompactPower/PatrickTaCompactPowder.svg'
+import ChanelCompactPowder3 from '../../assets/CompactPower/ChanelCompactPowder3.svg'
+import LamerCompactPowder from '../../assets/CompactPower/LamerCompactPowder.svg'
+import ChanelCompactPowder4 from '../../assets/CompactPower/ChanelCompactPowder4.svg'
 
 const CompactPower = () => {
     const [products] = useState([
       {
         id: 1,
-        name: "Mineral Foundation",
+        name: "GGCompactPowder",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: GGCompactPowder,
       },
       {
         id: 2,
-        name: "Bobbi Foundation",
+        name: "CamelCompactpowder",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: CamelCompactpowder,
       },
       {
         id: 3,
-        name: "Fenty Beauty Lipstick",
+        name: "ChanelCompactPowder",
         price: "1500",
-        image: "https://placehold.co/350x350",
+        image: ChanelCompactPowder,
       },
       {
         id: 4,
-        name: "Mineral Foundation",
+        name: "ChanelGlossyCompact",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: ChanelGlossyCompact,
       },
       {
         id: 5,
-        name: "Bobbi Foundation",
+        name: "ChanelCompactPowder2",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: ChanelCompactPowder2,
       },
       {
         id: 6,
-        name: "Fenty Beauty Lipstick",
+        name: "PatrickTaCompactPowder",
         price: "1500",
-        image: "https://placehold.co/350x350",
+        image: PatrickTaCompactPowder,
       },
       {
         id: 7,
-        name: "Mineral Foundation",
+        name: "ChanelCompactPowder3",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: ChanelCompactPowder3,
       },
       {
         id: 8,
-        name: "Bobbi Foundation",
+        name: "LamerCompactPowder",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: LamerCompactPowder,
       },
       {
         id: 9,
-        name: "Fenty Beauty Lipstick",
+        name: "ChanelCompactPowder4",
         price: "1500",
-        image: "https://placehold.co/350x350",
+        image: ChanelCompactPowder4,
       },
       ]);
 
@@ -74,26 +84,26 @@ const CompactPower = () => {
 
   return (
     <div>
-        <img className="w-[100%] h-[800px] object-cover" src={HighlighterBg} />
+        <img className="w-[100%] h-[800px] object-cover" src={CompactPowerBg} />
 
-        <div className='absolute bottom-70'>
-            <div className=" pl-2 w-[492px] h-[276px] justify-start text-black text-[70px] font-semibold font-['Akatab']">Glow Like Never Before!</div>
-            <div className="absolute w-[518px] h-[175px] justify-start text-white text-3xl font-semibold font-['Akatab']">Elevate your beauty with a luminous touch! Our highlighters are designed to enhance your natural radiance, giving you that perfect glow from day to night. Whether you prefer a subtle shimmer or a bold, dewy finish, we have the perfect formula for you</div>
+        <div className='absolute bottom-10 ml-215'>
+          <div className="ml-20 w-[513px] justify-start text-black text-[70px] font-light font-['Akatab']">Flawless Matte Perfection!</div>
+          <div className="w-[630px] h-[175px] justify-start text-white text-3xl font-semibold font-['Akatab']">Set, smooth, and stay shine-free all day! Our compact powder is designed to give you a natural, airbrushed finish while controlling oil and keeping your makeup fresh. Whether you need a light touch-up or full coverage, it’s your go-to for a flawless look</div>
         </div>
 
         <div className='pl-5 bg-[#f7a672] p-6'>
-            <h1 className="mt-5 w-full h-[32.45px] justify-start text-black text-[35px] font-normal font-['Akatab']">OUR HIGHLIGHTER PRODUCTS</h1>
+            <h1 className="mt-5 w-full h-[32.45px] justify-start text-black text-[35px] font-normal font-['Akatab']">OUR COMPACT POWDER PRODUCTS</h1>
 
             <div className='mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
             {products.map((product) => (
                 
-                <div key={product.id}>
+                <div key={product.id} className='p-5 hover:shadow-2xl hover:rounded-4xl text-center'>
     
-                    <img className="mt-15 w-[350px] h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
+                    <img className="mt-15 object-cover w-full h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
     
                     <h1 className="mt-5 w-full h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">{product.name}</h1>
     
-                    <p className="w-[247.75px] h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">₹{product.price}</p>
+                    <p className="h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">₹{product.price}</p>
     
                     <button onClick={() => handleAddToCart(product)} className="w-[222px] h-16 relative bg-[#f7a672] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
                         <div className="left-[43px] top-[11px] absolute justify-start text-black text-3xl font-bold font-['Akatab']">Add to cart</div>

@@ -1,33 +1,31 @@
 // src/components/Navbar.js
 import React from 'react';
 import { FiShoppingCart, FiUser } from 'react-icons/fi';
-import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux'; // Use useDispatch for dispatching actions
-import { logout } from '../../redux/auth'; // Import the logout action
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
   // Get the cart items from Redux state
   const cartItems = useSelector(state => state.cart.cartItems);
 
-  // Get authentication status from Redux
-  const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
+  // const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
 
   // Calculate the total quantity of items in the cart
   const getTotalItemsAdded = () => {
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const dispatch = useDispatch();
+  // const navigate = useNavigate();
 
-  const handleUser = () => {
-    if (isAuthenticated) {
-      dispatch(logout()); // Logout if already authenticated
-      navigate('/login');
-    } else {
-      navigate('/user');
-    }
-  };
+  // const handleUser = () => {
+  //   if (isAuthenticated) {
+  //     dispatch(logout());
+  //     navigate('/login');
+  //   } else {
+  //     navigate('/user');
+  //   }
+  // };
 
   const totalItemsAdded = getTotalItemsAdded();
 
@@ -36,7 +34,7 @@ const Navbar = () => {
       <ul className='flex items-center gap-5 ml-40'>
         
         <li>
-          <Link onClick={handleUser}>
+          <Link to='/login' >
             <FiUser size={32} />
           </Link>
         </li>

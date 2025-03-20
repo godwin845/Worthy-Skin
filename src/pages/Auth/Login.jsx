@@ -1,52 +1,40 @@
 // src/components/Auth/Login.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux'; // Import useDispatch
-import { login } from '../../redux/auth'; // Import login action
+import LoginBg from '../../assets/LoginBg.svg'
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(true);
-  const [errorMessage, setErrorMessage] = useState(null); // To store error messages
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simulate a login process (replace with actual API request)
-    if (email === 'user@example.com' && password === '123') {
-      // Dispatch login action with user data (replace with actual user data)
-      dispatch(login({ email, name: 'John Doe' }));
+    if (email === 'test@test.com' && password === '123') {
 
-      // Navigate to user page after successful login
+      // dispatch(login({ email, name: 'John Doe' }));
+
       navigate('/user');
     } else {
-      // If login fails, show error message
       setErrorMessage('Invalid email or password');
     }
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  if (!isModalOpen) return null;
-
   return (
-    <div className="fixed inset-0 bg-amber-600 bg-opacity-50 flex justify-center items-center z-50">
-      <div className="animate__animated animate__fadeInRight bg-white rounded-4xl p-8 w-[320px] max-w-[400px] relative">
-        <button
-          onClick={closeModal}
-          className="animate__animated animate__animated absolute top-2 right-2 text-gray-600 text-xl"
-        >
-          &times;
-        </button>
+    <div className="flex justify-center items-center min-h-screen bg-[#e99662] bg-opacity-50">
+      <div className="animate__animated animate__fadeInRight bg-white rounded-4xl p-8 w-[320px] max-w-[400px]"
+      style={{
+        backgroundImage: `url(${LoginBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+      >
         <h1 className="text-center text-black text-[25px] font-bold font-['Merriweather_Sans']">Login</h1>
 
-        {/* Display error message if any */}
         {errorMessage && (
           <div className="text-red-500 text-center mt-2">
             {errorMessage}

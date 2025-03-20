@@ -30,7 +30,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className="bg-[#e5974d] p-6 text-center h-full">
+    <div className="bg-[#e99662] p-6 text-center min-h-screen">
       <h1 className="text-4xl mt-20 mb-6">Your Cart</h1>
       
       {cartItems.length === 0 ? (
@@ -42,7 +42,7 @@ const CartPage = () => {
               <img src={item.image} alt={item.name} className="w-24 h-auto rounded-lg" />
               <div className="flex-1 text-left ml-4">
                 <h3>{item.name}</h3>
-                <p>Price: {item.price}</p>
+                <p>Price: ₹{item.price}</p>
                 <p>Quantity: {item.quantity}</p>
               </div>
               <button

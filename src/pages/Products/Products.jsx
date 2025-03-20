@@ -70,7 +70,7 @@ const Products = () => {
   ];
 
   return (
-    <div className="bg-[#e5974d] p-6">
+    <div className="bg-[#e99662] p-6">
       <div>
         <h1 className="mt-40 pl-15 h-[32.45px] justify-start text-black text-[50px] font-normal font-['Akatab']">
           OUR SKIN PRODUCTS

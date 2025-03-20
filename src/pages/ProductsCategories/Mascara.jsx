@@ -1,64 +1,73 @@
 import React, { useState } from 'react'
-import HighlighterBg from '../../assets/Foundation/HighlighterBg.svg'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { addToCart } from '../../redux/cart';
+import MascaraBg from '../../assets/Mascara/MascaraBg.svg'
+import MaybellineSkyHighMascara from '../../assets/Mascara/MaybellineSkyHighMascara.svg'
+import MaybellineLashSensaMascara from '../../assets/Mascara/MaybellineLashSensaMascara.svg'
+import GucciMascara from '../../assets/Mascara/GucciMascara.svg'
+import ClearToneMascara from '../../assets/Mascara/ClearToneMascara.svg'
+import RareBeautMascara from '../../assets/Mascara/RareBeautMascara.svg'
+import GucciMascara2 from '../../assets/Mascara/GucciMascara2.svg'
+import MarsMascara from '../../assets/Mascara/MarsMascara.svg'
+import DiorMascara from '../../assets/Mascara/DiorMascara.svg'
+import IliaMascara from '../../assets/Mascara/IliaMascara.svg'
 
 const Mascara = () => {
     const [products] = useState([
       {
         id: 1,
-        name: "Mineral Foundation",
+        name: "MaybellineSkyHighMascara",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: MaybellineSkyHighMascara,
       },
       {
         id: 2,
-        name: "Bobbi Foundation",
+        name: "MaybellineLashSensaMascara",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: MaybellineLashSensaMascara,
       },
       {
         id: 3,
-        name: "Fenty Beauty Lipstick",
+        name: "GucciMascara",
         price: "1500",
-        image: "https://placehold.co/350x350",
+        image: GucciMascara,
       },
       {
         id: 4,
-        name: "Mineral Foundation",
+        name: "ClearToneMascara",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: ClearToneMascara,
       },
       {
         id: 5,
-        name: "Bobbi Foundation",
+        name: "RareBeautMascara",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: RareBeautMascara,
       },
       {
         id: 6,
-        name: "Fenty Beauty Lipstick",
+        name: "GucciMascara2",
         price: "1500",
-        image: "https://placehold.co/350x350",
+        image: GucciMascara2,
       },
       {
         id: 7,
-        name: "Mineral Foundation",
+        name: "MarsMascara",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: MarsMascara,
       },
       {
         id: 8,
-        name: "Bobbi Foundation",
+        name: "DiorMascara",
         price: "250",
-        image: "https://placehold.co/350x350",
+        image: DiorMascara,
       },
       {
         id: 9,
-        name: "Fenty Beauty Lipstick",
+        name: "IliaMascara",
         price: "1500",
-        image: "https://placehold.co/350x350",
+        image: IliaMascara,
       },
       ]);
 
@@ -74,26 +83,26 @@ const Mascara = () => {
 
   return (
     <div>
-        <img className="w-[100%] h-[800px] object-cover" src={HighlighterBg} />
+        <img className="w-[100%] h-[800px] object-cover" src={MascaraBg} />
 
-        <div className='absolute bottom-70'>
-            <div className=" pl-2 w-[492px] h-[276px] justify-start text-black text-[70px] font-semibold font-['Akatab']">Glow Like Never Before!</div>
-            <div className="absolute w-[518px] h-[175px] justify-start text-white text-3xl font-semibold font-['Akatab']">Elevate your beauty with a luminous touch! Our highlighters are designed to enhance your natural radiance, giving you that perfect glow from day to night. Whether you prefer a subtle shimmer or a bold, dewy finish, we have the perfect formula for you</div>
+        <div className='absolute bottom-10 ml-200'>
+          <div className="w-[391px] ml-50 justify-start"><span class="text-black text-6xl font-normal font-['Akatab']">Lash Perfection, Redefined!<br/></span><span class="text-black text-3xl font-normal font-['Akatab']"><br/></span></div>
+          <div className="w-[657px] h-[175px] justify-start text-white text-3xl font-semibold font-['Akatab']">Your lashes deserve the best! Our advanced mascara formulas are designed to lengthen, volumize, and define with every stroke. Whether you're going for a natural flutter or bold drama, we have the perfect mascara for you</div>
         </div>
 
         <div className='pl-5 bg-[#f7a672] p-6'>
-            <h1 className="mt-5 w-full h-[32.45px] justify-start text-black text-[35px] font-normal font-['Akatab']">OUR HIGHLIGHTER PRODUCTS</h1>
+            <h1 className="mt-5 w-full h-[32.45px] justify-start text-black text-[35px] font-normal font-['Akatab']">OUR MASCARA PRODUCTS</h1>
 
             <div className='mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
             {products.map((product) => (
                 
-                <div key={product.id}>
+                <div key={product.id} className='p-5 hover:shadow-2xl hover:rounded-4xl text-center'>
     
-                    <img className="mt-15 w-[350px] h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
+                    <img className="mt-15 object-cover w-full h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
     
                     <h1 className="mt-5 w-full h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">{product.name}</h1>
     
-                    <p className="w-[247.75px] h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">₹{product.price}</p>
+                    <p className="h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">₹{product.price}</p>
     
                     <button onClick={() => handleAddToCart(product)} className="w-[222px] h-16 relative bg-[#f7a672] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
                         <div className="left-[43px] top-[11px] absolute justify-start text-black text-3xl font-bold font-['Akatab']">Add to cart</div>
