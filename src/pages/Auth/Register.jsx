@@ -1,19 +1,33 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import LoginBg from '../../assets/LoginBg.svg'
+import axios from 'axios'
+import { IoMdClose } from 'react-icons/io';
 
 const Register = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    navigate('/login');
+    try {
+      const response = await axios.post('http://localhost:5000/register', { username, email, password });
+      alert(response.data.message)
+      navigate('/login');
+    } catch (error) {
+      console.error(error);
+      setErrorMessage('Registeration failed!');
+    }
   };
+
+  const handleClose = () => {
+    navigate('/');
+  }
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#e99662] bg-opacity-50">
@@ -24,7 +38,16 @@ const Register = () => {
               backgroundPosition: 'center',
             }}
       >
+
+        <IoMdClose onClick={handleClose} className='ml-60 text-xl' />
+        
         <h1 className="text-center text-black text-[25px] font-bold font-['Merriweather_Sans']">Register</h1>
+
+        {errorMessage && (
+          <div className="text-red-500 text-center mt-2">
+            {errorMessage}
+          </div>
+        )}
 
         <form onSubmit={handleSubmit}>
 

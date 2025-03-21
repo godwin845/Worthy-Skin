@@ -17,6 +17,8 @@ import Eyeliner from './pages/ProductsCategories/Eyeliner';
 import Primer from './pages/ProductsCategories/Primer';
 import Blush from './pages/ProductsCategories/Blush';
 import Highlighter from './pages/ProductsCategories/Highlighter';
+import User from './pages/Auth/User';
+import Checkout from './pages/Cart/Checkout';
 
 const App = () => {
   return (
@@ -40,9 +42,11 @@ const App = () => {
         <Route path="/highlighter" element={<Highlighter />} />
 
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<Checkout />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/user" element={<User />} />
         
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

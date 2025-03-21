@@ -11,19 +11,19 @@ const Products = () => {
     {
       id: 1,
       name: "Mineral Foundation",
-      price: "₹250",
+      price: "250",
       image: MineralFoundation,
     },
     {
       id: 2,
       name: "Bobbi Foundation",
-      price: "₹250",
+      price: "250",
       image: BobbiFoundationHighlighter,
     },
     {
       id: 3,
       name: "Fenty Beauty Lipstick",
-      price: "₹1500",
+      price: "1500",
       image: FentyBeautyLipstick,
     },
   ]);
@@ -59,7 +59,7 @@ const Products = () => {
             />
             <div className="text-black mb-5">
               <h1 className="text-[20px] sm:text-[25px] font-normal font-['Akshar']">{product.name}</h1>
-              <p className="text-[16px] sm:text-[20px]">{product.price}</p>
+              <p className="text-[16px] sm:text-[20px]">₹{product.price}</p>
             </div>
 
             <button onClick={() => handleAddToCart(product)} className="w-[222px] h-16 relative bg-[#f7a672] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">

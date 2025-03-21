@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import LoginBg from '../../assets/LoginBg.svg'
+import axios from 'axios';
+import { IoMdClose } from "react-icons/io";
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -11,18 +13,22 @@ const Login = () => {
   const navigate = useNavigate();
   // const dispatch = useDispatch();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (email === 'test@test.com' && password === '123') {
-
-      // dispatch(login({ email, name: 'John Doe' }));
-
+    try {
+      const response = await axios.post('http://localhost:5000/login', { email, password });
+      alert(response.data.message)
       navigate('/user');
-    } else {
+    } catch (error) {
+      console.error(error);
       setErrorMessage('Invalid email or password');
     }
   };
+
+  const handleClose = () => {
+    navigate('/');
+  }
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#e99662] bg-opacity-50">
@@ -33,6 +39,8 @@ const Login = () => {
         backgroundPosition: 'center',
       }}
       >
+        <IoMdClose onClick={handleClose} className='ml-60 text-xl' />
+
         <h1 className="text-center text-black text-[25px] font-bold font-['Merriweather_Sans']">Login</h1>
 
         {errorMessage && (

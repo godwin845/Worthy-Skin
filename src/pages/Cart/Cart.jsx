@@ -1,11 +1,11 @@
-// src/pages/CartPage.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart } from '../../redux/cart';
+import PaymentIntegration from './PaymentIntegration';
 
 const CartPage = () => {
   const dispatch = useDispatch();
-  const cartItems = useSelector(state => state.cart.cartItems); // Get cart items from Redux state
+  const cartItems = useSelector(state => state.cart.cartItems);
 
   const handleRemoveFromCart = (productId) => {
     dispatch(removeFromCart({ id: productId }));
@@ -39,7 +39,7 @@ const CartPage = () => {
         <div className="flex flex-col items-center">
           {cartItems.map((item) => (
             <div key={item.id} className="flex justify-between items-center bg-white p-4 m-2 rounded-xl shadow-md w-4/5">
-              <img src={item.image} alt={item.name} className="w-24 h-auto rounded-lg" />
+              <img src={item.image} alt={item.name} className="w-24 h-24 rounded-lg" />
               <div className="flex-1 text-left ml-4">
                 <h3>{item.name}</h3>
                 <p>Price: ₹{item.price}</p>
@@ -76,9 +76,8 @@ const CartPage = () => {
             <h2>₹{getFinalTotal().toFixed(2)}</h2>
           </div>
 
-          <button className="bg-[#f7a672] py-3 px-6 rounded-lg mt-10 mb-5">
-            Proceed to Checkout
-          </button>
+          <PaymentIntegration amount={getFinalTotal().toFixed(2)} />
+
         </div>
       )}
     </div>
