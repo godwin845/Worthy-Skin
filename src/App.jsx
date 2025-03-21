@@ -18,7 +18,7 @@ import Primer from './pages/ProductsCategories/Primer';
 import Blush from './pages/ProductsCategories/Blush';
 import Highlighter from './pages/ProductsCategories/Highlighter';
 import User from './pages/Auth/User';
-import Checkout from './pages/Cart/Checkout';
+import FoundationDescription from './pages/ProductsCategories/Foundation/FoundationDescription';
 
 const App = () => {
   return (
@@ -30,6 +30,8 @@ const App = () => {
         <Route path="/products" element={<Products />} />
 
         <Route path="/foundation" element={<Foundation />} />
+        <Route path="/foundationDescription" element={<FoundationDescription />} />
+
         <Route path="/compactpower" element={<CompactPower />} />
         <Route path="/lipstick" element={<Lipstick />} />
 
@@ -42,7 +44,6 @@ const App = () => {
         <Route path="/highlighter" element={<Highlighter />} />
 
         <Route path="/cart" element={<CartPage />} />
-        <Route path="/checkout" element={<Checkout />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

@@ -78,18 +78,21 @@ const Products = () => {
 
         <div className="mt-20 ml-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product) => (
-            <Link key={product.id} to={product.link} className="products-card text-center">
-              <img
-                className="w-[350px] h-[350px] rounded-[35px]"
-                src={product.image}
-                alt={product.name}
-              />
+            <div key={product.id} className="products-card text-center">
+
+              <Link to={product.link} >
+                <img
+                  className="w-[350px] h-[350px] rounded-[35px]"
+                  src={product.image}
+                  alt={product.name}
+                />
+              </Link>
               <h1 className="mt-10 mb-40 w-[300px] h-[50.55px] justify-start text-black text-[45px] font-normal font-['Akatab']">
                 {product.name}
                 <br />
                 <br />
               </h1>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

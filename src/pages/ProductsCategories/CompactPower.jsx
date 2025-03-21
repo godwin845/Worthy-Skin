@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import HighlighterBg from '../../assets/Foundation/HighlighterBg.svg'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { addToCart } from '../../redux/cart';
