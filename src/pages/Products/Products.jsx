@@ -5,9 +5,9 @@ import Lipstick from '../../assets/products/Lipstick.svg';
 import Mascara from '../../assets/products/Mascara.svg';
 import Concealer from '../../assets/products/Concealer.svg';
 import Eyeliner from '../../assets/products/Eyeliner.svg';
-import Primer from '../../assets/products/Primer.svg';
-import Blush from '../../assets/products/Blush.svg';
-import Highlighter from '../../assets/products/Highlighter.svg';
+// import Primer from '../../assets/products/Primer.svg';
+// import Blush from '../../assets/products/Blush.svg';
+// import Highlighter from '../../assets/products/Highlighter.svg';
 import '../../components/Home/Products.css';
 import { Link } from 'react-router-dom';
 
@@ -49,34 +49,16 @@ const Products = () => {
       image: Eyeliner,
       link: '/eyeliner',  // Example route
     },
-    {
-      id: 7,
-      name: 'Primer',
-      image: Primer,
-      link: '/primer',  // Example route
-    },
-    {
-      id: 8,
-      name: 'Blush',
-      image: Blush,
-      link: '/blush',  // Example route
-    },
-    {
-      id: 9,
-      name: 'Highlighter',
-      image: Highlighter,
-      link: '/highlighter',  // Example route
-    },
   ];
 
   return (
-    <div className="bg-[#e99662] p-6">
+    <div className="bg-[#e99662] p-6 max-[h-full]">
       <div>
-        <h1 className="mt-40 pl-15 h-[32.45px] justify-start text-black text-[50px] font-normal font-['Akatab']">
+        <h1 className="mt-10 lg:mt-40 pl-15 h-[32.45px] justify-start text-black text-[28px] lg:text-[45px] font-normal font-['Akatab']">
           OUR SKIN PRODUCTS
         </h1>
 
-        <div className="mt-20 ml-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-5 lg:mt-20 w-[80%] ml-10 lg:ml-40 grid grid-cols-1 md:grid-cols-3 lg:gap-30">
           {products.map((product) => (
             <div key={product.id} className="products-card text-center">
 
@@ -87,7 +69,7 @@ const Products = () => {
                   alt={product.name}
                 />
               </Link>
-              <h1 className="mt-10 mb-40 w-[300px] h-[50.55px] justify-start text-black text-[45px] font-normal font-['Akatab']">
+              <h1 className="lg:mt-10 mb-10 w-[300px] h-[50.55px] justify-start text-black text-3xl lg:text-[45px] font-normal font-['Akatab']">
                 {product.name}
                 <br />
                 <br />

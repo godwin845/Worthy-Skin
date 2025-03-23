@@ -14,16 +14,16 @@ import Lipstick from './pages/ProductsCategories/Lipstick';
 import Mascara from './pages/ProductsCategories/Mascara';
 import Concealer from './pages/ProductsCategories/Concealer';
 import Eyeliner from './pages/ProductsCategories/Eyeliner';
-import Primer from './pages/ProductsCategories/Primer';
-import Blush from './pages/ProductsCategories/Blush';
-import Highlighter from './pages/ProductsCategories/Highlighter';
+// import Primer from './pages/ProductsCategories/Primer';
+// import Blush from './pages/ProductsCategories/Blush';
+// import Highlighter from './pages/ProductsCategories/Highlighter';
 import User from './pages/Auth/User';
 import FoundationDescription from './pages/ProductsCategories/Foundation/FoundationDescription';
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -39,9 +39,9 @@ const App = () => {
         <Route path="/concealer" element={<Concealer />} />
         <Route path="/eyeliner" element={<Eyeliner />} />
 
-        <Route path="/primer" element={<Primer />} />
+        {/* <Route path="/primer" element={<Primer />} />
         <Route path="/blush" element={<Blush />} />
-        <Route path="/highlighter" element={<Highlighter />} />
+        <Route path="/highlighter" element={<Highlighter />} /> */}
 
         <Route path="/cart" element={<CartPage />} />
 

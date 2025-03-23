@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { addToCart } from '../../redux/cart';
 import ConcealerBg from '../../assets/Concealer/ConcealerBg.svg'
 import EsteeLauderConcealer from '../../assets/Concealer/EsteeLauderConcealer.svg'
@@ -20,6 +20,7 @@ const Concealer = () => {
         name: "EsteeLauderConcealer",
         price: "250",
         image: EsteeLauderConcealer,
+        link: '/'
       },
       {
         id: 2,
@@ -98,7 +99,9 @@ const Concealer = () => {
                 
                 <div key={product.id} className='p-5 hover:shadow-2xl hover:rounded-4xl text-center'>
     
+                   <Link to={product.link}>
                     <img className="mt-15 object-cover w-full h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
+                   </Link>
     
                     <h1 className="mt-5 w-full h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">{product.name}</h1>
     

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { addToCart } from '../../redux/cart';
 import HighlighterBg from '../../assets/Highlighter/HighlighterBg.svg'
 import GucciHighlighter from '../../assets/Highlighter/GucciHighlighter.svg'
@@ -20,6 +20,7 @@ const Highlighter = () => {
         name: "GucciHighlighter",
         price: "250",
         image: GucciHighlighter,
+        link: '/',
       },
       {
         id: 2,
@@ -98,7 +99,9 @@ const Highlighter = () => {
                 
                 <div key={product.id} className='p-5 hover:shadow-2xl hover:rounded-4xl text-center'>
     
-                    <img className="mt-15 object-cover w-full h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
+                    <Link to={product.link}>
+                      <img className="mt-15 object-cover w-full h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
+                    </Link>
     
                     <h1 className="mt-5 w-full h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">{product.name}</h1>
     

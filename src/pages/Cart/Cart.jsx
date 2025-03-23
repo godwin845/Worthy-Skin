@@ -42,7 +42,7 @@ const CartPage = () => {
               <img src={item.image} alt={item.name} className="w-24 h-24 rounded-lg" />
               <div className="flex-1 text-left ml-4">
                 <h3>{item.name}</h3>
-                <p>Price: ₹{item.price}</p>
+                <p>Price: ₹{item.DiscountPrice}</p>
                 <p>Quantity: {item.quantity}</p>
               </div>
               <button

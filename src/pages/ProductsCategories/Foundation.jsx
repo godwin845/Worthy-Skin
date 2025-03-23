@@ -18,56 +18,65 @@ const Foundation = () => {
       {
         id: 1,
         name: "Ms Asam Light foundation",
-        price: "250",
+        price: "300",
+        DiscountPrice: "250",
         image: MsAsamLightfoundation,
         link: '/foundationDescription'
       },
       {
         id: 2,
         name: "N7 Light Foundation",
-        price: "250",
+        price: "300",
+        DiscountPrice: "250",
         image: N7LightFoundation,
       },
       {
         id: 3,
         name: "ICan Light Foundation",
-        price: "1500",
+        price: "300",
+        DiscountPrice: "250",
         image: ICanLightFoundation,
       },
       {
         id: 4,
         name: "HudabeautyMediumFoundation",
-        price: "250",
+        price: "300",
+        DiscountPrice: "250",
         image: HudabeautyMediumFoundation,
       },
       {
         id: 5,
         name: "RareBeautyMediumFoundation",
-        price: "250",
+        price: "300",
+        DiscountPrice: "250",
         image: RareBeautyMediumFoundation,
       },
       {
         id: 6,
         name: "MarsMediumFoundation",
-        price: "1500",
+        price: "300",
+        DiscountPrice: "250",
         image: MarsMediumFoundation,
       },
       {
         id: 7,
         name: "BaimsDarkFoundation",
-        price: "250",
+        price: "300",
+        DiscountPrice: "250",
         image: BaimsDarkFoundation,
       },
       {
         id: 8,
         name: "MarsDarkFoundation",
-        price: "250",
+        price: "300",
+        DiscountPrice: "250",
         image: MarsDarkFoundation,
       },
       {
         id: 9,
         name: "GodSDarkFoundation",
-        price: "1500",
+        price: "300",
+        DiscountPrice: "250",
         image: GodSDarkFoundation,
       },
       ]);
@@ -84,31 +93,36 @@ const Foundation = () => {
 
   return (
     <div>
-        <img className="w-[100%] h-[800px] object-cover" src={FoundationBg} />
+        <img className=" lg:w-[100%] lg:h-[800px] lg:object-cover" src={FoundationBg} />
 
-        <div className='absolute bottom-50 pl-10'>
-          <div className="w-[623px] h-[276px] justify-start text-black text-[70px] font-semibold font-['Akatab']">Flawless Coverage, Your Perfect Match</div>
-          <div className="w-[626px] h-[175px] justify-start text-white text-3xl font-semibold font-['Akatab']">Achieve a seamless, natural-looking complexion with our foundation, designed to enhance your beauty without feeling heavy. Whether you prefer a matte, dewy, or radiant finish, our formulas provide the perfect balance of coverage and breathability</div>
+        <div className='absolute bottom-165 lg:bottom-50 pl-10 lg:pl-10'>
+          <div className="w-35 lg:w-[623px] lg:h-[276px] justify-start text-black text-sm lg:text-[70px] font-semibold font-['Akatab']">Flawless Coverage, Your Perfect Match</div>
+          <div className="mt-2 lg:mt-0 w-33 lg:w-[626px] lg:h-[175px] justify-start text-white text-[7px] lg:text-3xl font-semibold font-['Akatab']">Achieve a seamless, natural-looking complexion with our foundation, designed to enhance your beauty without feeling heavy. Whether you prefer a matte, dewy, or radiant finish, our formulas provide the perfect balance of coverage and breathability</div>
         </div>
 
-        <div className='pl-5 bg-[#f7a672] p-6'>
-            <h1 className="mt-5 w-full h-[32.45px] justify-start text-black text-[35px] font-normal font-['Akatab']">OUR FOUNDATION PRODUCTS</h1>
+        <div className='lg:pl-5 bg-[#f7a672] p-6'>
+            <h1 className="lg:mt-5 w-full h-[32.45px] justify-start text-black text-[24px] lg:text-[35px] font-normal font-['Akatab']">OUR FOUNDATION PRODUCTS</h1>
 
-            <div className='mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
+            <div className='lg:mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
             {products.map((product) => (
                 
                 <div key={product.id} className='p-5 hover:shadow-2xl hover:rounded-4xl text-center'>
     
                    <Link to={product.link} >
-                    <img className="mt-15 object-cover w-full h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
+                    <img className="mt-5 lg:mt-15 lg:object-cover w-full h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
                    </Link>
     
-                    <h1 className="mt-5 w-full h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">{product.name}</h1>
+                    <h1 className="mt-5 w-full h-[78.29px] justify-start text-black text-2xl lg:text-[32px] font-normal font-['Akshar']">{product.name}</h1>
     
-                    <p className="h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">₹{product.price}</p>
-    
-                    <button onClick={() => handleAddToCart(product)} className="w-[222px] h-16 relative bg-[#f7a672] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
-                        <div className="left-[43px] top-[11px] absolute justify-start text-black text-3xl font-bold font-['Akatab']">Add to cart</div>
+                    <div className='flex'>
+
+                      <p className='ml-7 mt-2 text-xl lg:text-2xl'>20% offer</p>
+                      <p className="line-through text-center ml-5 justify-start text-black text-[25px] lg:text-[32px] font-normal font-['Akshar']">₹{product.price}</p>
+                      <p className="h-[78.29px] ml-5 justify-start text-black text-[25px] lg:text-[32px] font-normal font-['Akshar']">₹{product.DiscountPrice}</p>
+                    </div>
+
+                    <button onClick={() => handleAddToCart(product)} className="w-[222px] h-16 mb-5 relative bg-[#f7a672] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
+                        <div className="left-[43px] top-[11px] justify-start text-black text-2xl lg:text-3xl font-bold font-['Akatab']">Add to cart</div>
                     </button>
                 </div>
                 ))}
