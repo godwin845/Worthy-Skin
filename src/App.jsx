@@ -23,7 +23,7 @@ import FoundationDescription from './pages/ProductsCategories/Foundation/Foundat
 const App = () => {
   return (
     <Router>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
 

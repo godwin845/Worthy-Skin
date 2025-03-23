@@ -54,7 +54,7 @@ const Products = () => {
   return (
     <div className="bg-[#e99662] p-6 max-[h-full]">
       <div>
-        <h1 className="mt-10 lg:mt-40 pl-15 h-[32.45px] justify-start text-black text-[28px] lg:text-[45px] font-normal font-['Akatab']">
+        <h1 className="mt-20 lg:mt-40 pl-15 h-[32.45px] justify-start text-black text-[28px] lg:text-[45px] font-normal font-['Akatab']">
           OUR SKIN PRODUCTS
         </h1>
 
