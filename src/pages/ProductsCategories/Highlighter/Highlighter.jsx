@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import HighlighterBg from '../../assets/Highlighter/HighlighterBg.svg'
-import GucciHighlighter from '../../assets/Highlighter/GucciHighlighter.svg'
-import RevolutionHighlighter from '../../assets/Highlighter/RevolutionHighlighter.svg'
-import RareBeautyHighlighter from '../../assets/Highlighter/RareBeautyHighlighter.svg'
-import MarsHighlighter from '../../assets/Highlighter/MarsHighlighter.svg'
-import MacHighlighter from '../../assets/Highlighter/MacHighlighter.svg'
-import ElfHighlighter from '../../assets/Highlighter/ElfHighlighter.svg'
-import GGSilverShineHighlighter from '../../assets/Highlighter/GGSilverShineHighlighter.svg'
-import ChanelRoseHighlighter from '../../assets/Highlighter/ChanelRoseHighlighter.svg'
-import RevolutionSilverHighlighter from '../../assets/Highlighter/RevolutionSilverHighlighter.svg'
-import ProductsList from './ProductsList';
+import HighlighterBg from '../../../assets/Highlighter/HighlighterBg.svg'
+import GucciHighlighter from '../../../assets/Highlighter/GucciHighlighter.svg'
+import RevolutionHighlighter from '../../../assets/Highlighter/RevolutionHighlighter.svg'
+import RareBeautyHighlighter from '../../../assets/Highlighter/RareBeautyHighlighter.svg'
+import MarsHighlighter from '../../../assets/Highlighter/MarsHighlighter.svg'
+import MacHighlighter from '../../../assets/Highlighter/MacHighlighter.svg'
+import ElfHighlighter from '../../../assets/Highlighter/ElfHighlighter.svg'
+import GGSilverShineHighlighter from '../../../assets/Highlighter/GGSilverShineHighlighter.svg'
+import ChanelRoseHighlighter from '../../../assets/Highlighter/ChanelRoseHighlighter.svg'
+import RevolutionSilverHighlighter from '../../../assets/Highlighter/RevolutionSilverHighlighter.svg'
+import ProductsList from '../ProductsList';
 
 const Highlighter = () => {
     const [products] = useState([

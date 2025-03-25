@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundation from '../../../assets/Foundation/MsAsamLightfoundation.svg'
-import Products from './Products';
+import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import ProductsDescription from '../ProductsDescription';
 
-const FoundationDescription = () => {
+const ChanelCompactPowder = () => {
   const [product] = useState([
       {
         id: 1,
         name: "Ms Asam Light foundation",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundation,
+        image: MsAsamLightfoundationImage,
       },
   ]);
   
@@ -42,7 +42,7 @@ const FoundationDescription = () => {
 
       <div className='flex'>
         
-       <Products productData={product} />
+       <ProductsDescription productData={product} />
 
         <div>
           <div className='ml-10'>
@@ -75,4 +75,4 @@ const FoundationDescription = () => {
   )
 }
 
-export default FoundationDescription
+export default ChanelCompactPowder

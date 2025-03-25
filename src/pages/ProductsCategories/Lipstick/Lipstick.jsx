@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import LipstickBg from '../../assets/Lipstick/LipstickBg.svg'
-import FentyBeautylipstick from '../../assets/Lipstick/FentyBeautylipstick.svg'
-import Smachboxlipstick from '../../assets/Lipstick/Smachboxlipstick.svg'
-import Naslipstick from '../../assets/Lipstick/Naslipstick .svg'
-import GGNudeshadelipstick from '../../assets/Lipstick/GGNudeshadelipstick.svg'
-import ChanelNudeshadeLipstick from '../../assets/Lipstick/ChanelNudeshadeLipstick.svg'
-import PatrickTaNudeShade from '../../assets/Lipstick/PatrickTaNudeShade.svg'
-import GCDarkRedshadelipstick from '../../assets/Lipstick/GCDarkRedshadelipstick.svg'
-import Laminalightredshade from '../../assets/Lipstick/Laminalightredshade.svg'
-import ChanelRoyaredLipstick from '../../assets/Lipstick/ChanelRoyaredLipstick.svg'
-import ProductsList from './ProductsList';
+import LipstickBg from '../../../assets/Lipstick/LipstickBg.svg'
+import FentyBeautylipstick from '../../../assets/Lipstick/FentyBeautylipstick.svg'
+import Smachboxlipstick from '../../../assets/Lipstick/Smachboxlipstick.svg'
+import Naslipstick from '../../../assets/Lipstick/Naslipstick .svg'
+import GGNudeshadelipstick from '../../../assets/Lipstick/GGNudeshadelipstick.svg'
+import ChanelNudeshadeLipstick from '../../../assets/Lipstick/ChanelNudeshadeLipstick.svg'
+import PatrickTaNudeShade from '../../../assets/Lipstick/PatrickTaNudeShade.svg'
+import GCDarkRedshadelipstick from '../../../assets/Lipstick/GCDarkRedshadelipstick.svg'
+import Laminalightredshade from '../../../assets/Lipstick/Laminalightredshade.svg'
+import ChanelRoyaredLipstick from '../../../assets/Lipstick/ChanelRoyaredLipstick.svg'
+import ProductsList from '../ProductsList';
 
 const Lipstick = () => {
     const [products] = useState([
@@ -18,55 +18,63 @@ const Lipstick = () => {
         name: "FentyBeautylipstick",
         price: "250",
         image: FentyBeautylipstick,
-        link: '/',
+        link: '/FentyBeautylipstick',
       },
       {
         id: 2,
         name: "Smachboxlipstick",
         price: "250",
         image: Smachboxlipstick,
+        link: '/Smachboxlipstick',
       },
       {
         id: 3,
         name: "Naslipstick",
         price: "1500",
         image: Naslipstick,
+        link: '/Naslipstick',
       },
       {
         id: 4,
         name: "GGNudeshadelipstick",
         price: "250",
         image: GGNudeshadelipstick,
+        link: '/GGNudeshadelipstick',
       },
       {
         id: 5,
         name: "ChanelNudeshadeLipstick",
         price: "250",
         image: ChanelNudeshadeLipstick,
+        link: '/ChanelNudeshadeLipstick',
       },
       {
         id: 6,
         name: "PatrickTaNudeShade",
         price: "1500",
         image: PatrickTaNudeShade,
+        link: '/PatrickTaNudeShade',
       },
       {
         id: 7,
         name: "GCDarkRedshadelipstick",
         price: "250",
         image: GCDarkRedshadelipstick,
+        link: '/GCDarkRedshadelipstick',
       },
       {
         id: 8,
         name: "Laminalightredshade",
         price: "250",
         image: Laminalightredshade,
+        link: '/Laminalightredshade',
       },
       {
         id: 9,
         name: "ChanelRoyaredLipstick",
         price: "1500",
         image: ChanelRoyaredLipstick,
+        link: '/ChanelRoyaredLipstick',
       },
       ]);
 

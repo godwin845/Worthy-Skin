@@ -5,9 +5,6 @@ import Lipstick from '../../assets/products/Lipstick.svg';
 import Mascara from '../../assets/products/Mascara.svg';
 import Concealer from '../../assets/products/Concealer.svg';
 import Eyeliner from '../../assets/products/Eyeliner.svg';
-// import Primer from '../../assets/products/Primer.svg';
-// import Blush from '../../assets/products/Blush.svg';
-// import Highlighter from '../../assets/products/Highlighter.svg';
 import '../../components/Home/Products.css';
 import { Link } from 'react-router-dom';
 
@@ -17,37 +14,37 @@ const Products = () => {
       id: 1,
       name: 'Foundation',
       image: Foundation,
-      link: '/foundation',  // Fixed 'Link' to 'link' and added valid route
+      link: '/foundation',
     },
     {
       id: 2,
       name: 'Compact Power',
       image: CompactPower,
-      link: '/compactpower',  // Example route
+      link: '/compactpower',
     },
     {
       id: 3,
       name: 'Lipstick',
       image: Lipstick,
-      link: '/lipstick',  // Example route
+      link: '/lipstick',
     },
     {
       id: 4,
       name: 'Mascara',
       image: Mascara,
-      link: '/mascara',  // Example route
+      link: '/mascara',
     },
     {
       id: 5,
       name: 'Concealer',
       image: Concealer,
-      link: '/concealer',  // Example route
+      link: '/concealer',
     },
     {
       id: 6,
       name: 'Eyeliner',
       image: Eyeliner,
-      link: '/eyeliner',  // Example route
+      link: '/eyeliner',
     },
   ];
 

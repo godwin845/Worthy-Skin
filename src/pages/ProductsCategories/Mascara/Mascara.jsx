@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import MascaraBg from '../../assets/Mascara/MascaraBg.svg'
-import MaybellineSkyHighMascara from '../../assets/Mascara/MaybellineSkyHighMascara.svg'
-import MaybellineLashSensaMascara from '../../assets/Mascara/MaybellineLashSensaMascara.svg'
-import GucciMascara from '../../assets/Mascara/GucciMascara.svg'
-import ClearToneMascara from '../../assets/Mascara/ClearToneMascara.svg'
-import RareBeautMascara from '../../assets/Mascara/RareBeautMascara.svg'
-import GucciMascara2 from '../../assets/Mascara/GucciMascara2.svg'
-import MarsMascara from '../../assets/Mascara/MarsMascara.svg'
-import DiorMascara from '../../assets/Mascara/DiorMascara.svg'
-import IliaMascara from '../../assets/Mascara/IliaMascara.svg'
-import ProductsList from './ProductsList';
+import MascaraBg from '../../../assets/Mascara/MascaraBg.svg'
+import MaybellineSkyHighMascara from '../../../assets/Mascara/MaybellineSkyHighMascara.svg'
+import MaybellineLashSensaMascara from '../../../assets/Mascara/MaybellineLashSensaMascara.svg'
+import GucciMascara from '../../../assets/Mascara/GucciMascara.svg'
+import ClearToneMascara from '../../../assets/Mascara/ClearToneMascara.svg'
+import RareBeautMascara from '../../../assets/Mascara/RareBeautMascara.svg'
+import GucciMascara2 from '../../../assets/Mascara/GucciMascara2.svg'
+import MarsMascara from '../../../assets/Mascara/MarsMascara.svg'
+import DiorMascara from '../../../assets/Mascara/DiorMascara.svg'
+import IliaMascara from '../../../assets/Mascara/IliaMascara.svg'
+import ProductsList from '../ProductsList';
 
 const Mascara = () => {
     const [products] = useState([
@@ -18,55 +18,63 @@ const Mascara = () => {
         name: "MaybellineSkyHighMascara",
         price: "250",
         image: MaybellineSkyHighMascara,
-        link: '/',
+        link: '/MaybellineSkyHighMascara',
       },
       {
         id: 2,
         name: "MaybellineLashSensaMascara",
         price: "250",
         image: MaybellineLashSensaMascara,
+        link: '/MaybellineLashSensaMascara',
       },
       {
         id: 3,
         name: "GucciMascara",
         price: "1500",
         image: GucciMascara,
+        link: '/GucciMascara',
       },
       {
         id: 4,
         name: "ClearToneMascara",
         price: "250",
         image: ClearToneMascara,
+        link: '/ClearToneMascara',
       },
       {
         id: 5,
         name: "RareBeautMascara",
         price: "250",
         image: RareBeautMascara,
+        link: '/RareBeautMascara',
       },
       {
         id: 6,
         name: "GucciMascara2",
         price: "1500",
         image: GucciMascara2,
+        link: '/GucciMascara2',
       },
       {
         id: 7,
         name: "MarsMascara",
         price: "250",
         image: MarsMascara,
+        link: '/MarsMascara',
       },
       {
         id: 8,
         name: "DiorMascara",
         price: "250",
         image: DiorMascara,
+        link: '/DiorMascara',
       },
       {
         id: 9,
         name: "IliaMascara",
         price: "1500",
         image: IliaMascara,
+        link: '/IliaMascara',
       },
       ]);
 

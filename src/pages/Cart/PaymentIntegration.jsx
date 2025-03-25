@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Function to load the Razorpay script
 const loadRazorpayScript = () => {
   return new Promise((resolve) => {
     const script = document.createElement('script');
@@ -11,7 +10,6 @@ const loadRazorpayScript = () => {
   });
 };
 
-// Function to handle the payment process
 const handlePayment = async (amount) => {
   const res = await loadRazorpayScript();
 
@@ -21,8 +19,8 @@ const handlePayment = async (amount) => {
   }
 
   const options = {
-    key: 'rzp_test_y226LCwZ8SpEQJ', // Replace with your Razorpay Key ID
-    amount: amount * 100, // Convert the amount to paise
+    key: 'rzp_test_y226LCwZ8SpEQJ',
+    amount: amount * 100,
     currency: 'INR',
     name: 'Worthy Skin',
     description: 'Test Transaction',

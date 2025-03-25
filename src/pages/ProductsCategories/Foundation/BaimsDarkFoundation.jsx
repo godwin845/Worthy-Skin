@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
 import ProductsDescription from '../ProductsDescription';
 
-const MsAsamLightfoundation = () => {
+const BaimsDarkFoundation = () => {
   const [product] = useState([
       {
         id: 1,
@@ -75,4 +75,4 @@ const MsAsamLightfoundation = () => {
   )
 }
 
-export default MsAsamLightfoundation
+export default BaimsDarkFoundation

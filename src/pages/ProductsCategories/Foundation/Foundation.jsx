@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import FoundationBg from '../../assets/Foundation/FoundationBg.svg'
-import MsAsamLightfoundation from '../../assets/Foundation/MsAsamLightfoundation.svg'
-import N7LightFoundation from '../../assets/Foundation/N7LightFoundation.svg'
-import ICanLightFoundation from '../../assets/Foundation/ICanLightFoundation.svg'
-import HudabeautyMediumFoundation from '../../assets/Foundation/HudabeautyMediumFoundation.svg'
-import RareBeautyMediumFoundation from '../../assets/Foundation/RareBeautyMediumFoundation.svg'
-import MarsMediumFoundation from '../../assets/Foundation/MarsMediumFoundation.svg'
-import BaimsDarkFoundation from '../../assets/Foundation/BaimsDarkFoundation.svg'
-import MarsDarkFoundation from '../../assets/Foundation/MarsDarkFoundation.svg'
-import GodSDarkFoundation from '../../assets/Foundation/GodSDarkFoundation.svg'
-import ProductsList from './ProductsList';
+import FoundationBg from '../../../assets/Foundation/FoundationBg.svg'
+import MsAsamLightfoundation from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import N7LightFoundation from '../../../assets/Foundation/N7LightFoundation.svg'
+import ICanLightFoundation from '../../../assets/Foundation/ICanLightFoundation.svg'
+import HudabeautyMediumFoundation from '../../../assets/Foundation/HudabeautyMediumFoundation.svg'
+import RareBeautyMediumFoundation from '../../../assets/Foundation/RareBeautyMediumFoundation.svg'
+import MarsMediumFoundation from '../../../assets/Foundation/MarsMediumFoundation.svg'
+import BaimsDarkFoundation from '../../../assets/Foundation/BaimsDarkFoundation.svg'
+import MarsDarkFoundation from '../../../assets/Foundation/MarsDarkFoundation.svg'
+import GodSDarkFoundation from '../../../assets/Foundation/GodSDarkFoundation.svg'
+import ProductsList from '../ProductsList';
 
 const Foundation = () => {
 
@@ -20,7 +20,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: MsAsamLightfoundation,
-        link: '/foundationDescription'
+        link: '/MsAsamLightfoundation'
       },
       {
         id: 2,
@@ -28,6 +28,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: N7LightFoundation,
+        link: '/N7LightFoundation'
       },
       {
         id: 3,
@@ -35,6 +36,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: ICanLightFoundation,
+        link: '/ICanLightFoundation'
       },
       {
         id: 4,
@@ -42,6 +44,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: HudabeautyMediumFoundation,
+        link: '/HudabeautyMediumFoundation'
       },
       {
         id: 5,
@@ -49,6 +52,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: RareBeautyMediumFoundation,
+        link: '/RareBeautyMediumFoundation'
       },
       {
         id: 6,
@@ -56,6 +60,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: MarsMediumFoundation,
+        link: '/MarsMediumFoundation'
       },
       {
         id: 7,
@@ -63,6 +68,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: BaimsDarkFoundation,
+        link: '/BaimsDarkFoundation'
       },
       {
         id: 8,
@@ -70,6 +76,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: MarsDarkFoundation,
+        link: '/MarsDarkFoundation'
       },
       {
         id: 9,
@@ -77,6 +84,7 @@ const Foundation = () => {
         price: "300",
         DiscountPrice: "250",
         image: GodSDarkFoundation,
+        link: '/GodSDarkFoundation'
       },
       ]);
 

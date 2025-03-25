@@ -1,10 +1,9 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { addToCart } from '../../../redux/cart';
+import { addToCart } from '../../redux/cart';
 
-const Products = ({ productData }) => {
-
+const ProductsDescription = ({ productData }) => {
 
   const dispatch = useDispatch();
 
@@ -43,4 +42,4 @@ const Products = ({ productData }) => {
   )
 }
 
-export default Products
+export default ProductsDescription

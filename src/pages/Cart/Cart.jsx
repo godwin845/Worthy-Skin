@@ -15,18 +15,16 @@ const CartPage = () => {
     return cartItems.reduce((total, item) => total + parseInt(item.price.replace('₹', '')) * item.quantity, 0);
   };
 
-  // Calculate total quantity of items added to the cart
   const getTotalItemsAdded = () => {
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
-  // Calculate discount (Assuming a 10% discount for simplicity)
   const getDiscount = () => {
-    return getCartTotal() * 0.10; // 10% discount
+    return getCartTotal() * 0.10;
   };
 
   const getFinalTotal = () => {
-    return getCartTotal() - getDiscount(); // Total after applying discount
+    return getCartTotal() - getDiscount();
   };
 
   return (

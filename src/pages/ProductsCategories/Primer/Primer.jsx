@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import PrimerBg from '../../assets/Primer/PrimerBg.svg'
-import FentyBeautyPinkPrimerPrimerBg from '../../assets/Primer/FentyBeautyPinkPrimer.svg'
-import IconicMildPrimer from '../../assets/Primer/IconicMildPrimer.svg'
-import FentyBeautyMildPrimer from '../../assets/Primer/FentyBeautyMildPrimer.svg'
-import ElfRosePrimer from '../../assets/Primer/ElfRosePrimer.svg'
-import MarsLightPrimer from '../../assets/Primer/MarsLightPrimer.svg'
-import LorealGoldenPrimer from '../../assets/Primer/LorealGoldenPrimer.svg'
-import MiikHydroPrimer from '../../assets/Primer/MiikHydroPrimer.svg'
-import ElfPinkPrimer from '../../assets/Primer/ElfPinkPrimer.svg'
-import FentyBeautyMildPrimer1 from '../../assets/Primer/FentyBeautyMildPrimer1.svg'
-import ProductsList from './ProductsList';
+import PrimerBg from '../../../assets/Primer/PrimerBg.svg'
+import FentyBeautyPinkPrimerPrimerBg from '../../../assets/Primer/FentyBeautyPinkPrimer.svg'
+import IconicMildPrimer from '../../../assets/Primer/IconicMildPrimer.svg'
+import FentyBeautyMildPrimer from '../../../assets/Primer/FentyBeautyMildPrimer.svg'
+import ElfRosePrimer from '../../../assets/Primer/ElfRosePrimer.svg'
+import MarsLightPrimer from '../../../assets/Primer/MarsLightPrimer.svg'
+import LorealGoldenPrimer from '../../../assets/Primer/LorealGoldenPrimer.svg'
+import MiikHydroPrimer from '../../../assets/Primer/MiikHydroPrimer.svg'
+import ElfPinkPrimer from '../../../assets/Primer/ElfPinkPrimer.svg'
+import FentyBeautyMildPrimer1 from '../../../assets/Primer/FentyBeautyMildPrimer1.svg'
+import ProductsList from '../ProductsList';
 
 const Primer = () => {
     const [products] = useState([

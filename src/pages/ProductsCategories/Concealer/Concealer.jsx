@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import ConcealerBg from '../../assets/Concealer/ConcealerBg.svg'
-import EsteeLauderConcealer from '../../assets/Concealer/EsteeLauderConcealer.svg'
-import CharlotteTilburyConcealer from '../../assets/Concealer/CharlotteTilburyConcealer.svg'
-import MaybellineConcealer from '../../assets/Concealer/MaybellineConcealer.svg'
-import FentyBeautConcealer from '../../assets/Concealer/FentyBeautConcealer.svg'
-import ShiseidoConcealer from '../../assets/Concealer/ShiseidoConcealer.svg'
-import TarteCocealer from '../../assets/Concealer/TarteCocealer.svg'
-import NYXDoubleStickConcealer from '../../assets/Concealer/NYXDoubleStickConcealer.svg'
-import MaybellineLightConcealer from '../../assets/Concealer/MaybellineLightConcealer.svg'
-import SaieCoceale from '../../assets/Concealer/SaieCoceale.svg'
-import ProductsList from './ProductsList';
+import ConcealerBg from '../../../assets/Concealer/ConcealerBg.svg'
+import EsteeLauderConcealer from '../../../assets/Concealer/EsteeLauderConcealer.svg'
+import CharlotteTilburyConcealer from '../../../assets/Concealer/CharlotteTilburyConcealer.svg'
+import MaybellineConcealer from '../../../assets/Concealer/MaybellineConcealer.svg'
+import FentyBeautConcealer from '../../../assets/Concealer/FentyBeautConcealer.svg'
+import ShiseidoConcealer from '../../../assets/Concealer/ShiseidoConcealer.svg'
+import TarteCocealer from '../../../assets/Concealer/TarteCocealer.svg'
+import NYXDoubleStickConcealer from '../../../assets/Concealer/NYXDoubleStickConcealer.svg'
+import MaybellineLightConcealer from '../../../assets/Concealer/MaybellineLightConcealer.svg'
+import SaieCoceale from '../../../assets/Concealer/SaieCoceale.svg'
+import ProductsList from '../ProductsList';
 
 const Concealer = () => {
     const [products] = useState([
@@ -18,55 +18,63 @@ const Concealer = () => {
         name: "EsteeLauderConcealer",
         price: "250",
         image: EsteeLauderConcealer,
-        link: '/'
+        link: '/EsteeLauderConcealer'
       },
       {
         id: 2,
         name: "CharlotteTilburyConcealer",
         price: "250",
         image: CharlotteTilburyConcealer,
+        link: '/CharlotteTilburyConcealer'
       },
       {
         id: 3,
         name: "MaybellineConcealer",
         price: "1500",
         image: MaybellineConcealer,
+        link: '/MaybellineConcealer'
       },
       {
         id: 4,
         name: "FentyBeautConcealer",
         price: "250",
         image: FentyBeautConcealer,
+        link: '/FentyBeautConcealer'
       },
       {
         id: 5,
         name: "ShiseidoConcealer",
         price: "250",
         image: ShiseidoConcealer,
+        link: '/ShiseidoConcealer'
       },
       {
         id: 6,
         name: "TarteCocealer",
         price: "1500",
         image: TarteCocealer,
+        link: '/TarteCocealer'
       },
       {
         id: 7,
         name: "NYXDoubleStickConcealer",
         price: "250",
         image: NYXDoubleStickConcealer,
+        link: '/NYXDoubleStickConcealer'
       },
       {
         id: 8,
         name: "MaybellineLightConcealer",
         price: "250",
         image: MaybellineLightConcealer,
+        link: '/MaybellineLightConcealer'
       },
       {
         id: 9,
         name: "SaieCoceale",
         price: "1500",
         image: SaieCoceale,
+        link: '/SaieCoceale'
       },
       ]);
 

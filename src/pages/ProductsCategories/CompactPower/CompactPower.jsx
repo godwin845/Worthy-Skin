@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import CompactPowerBg from '../../assets/CompactPower/CompactPowerBg.svg'
-import GGCompactPowder from '../../assets/CompactPower/GGCompactPowder.svg'
-import CamelCompactpowder from '../../assets/CompactPower/CamelCompactpowder.svg'
-import ChanelCompactPowder from '../../assets/CompactPower/ChanelCompactPowder.svg'
-import ChanelGlossyCompact from '../../assets/CompactPower/ChanelGlossyCompact.svg'
-import ChanelCompactPowder2 from '../../assets/CompactPower/ChanelCompactPowder2.svg'
-import PatrickTaCompactPowder from '../../assets/CompactPower/PatrickTaCompactPowder.svg'
-import ChanelCompactPowder3 from '../../assets/CompactPower/ChanelCompactPowder3.svg'
-import LamerCompactPowder from '../../assets/CompactPower/LamerCompactPowder.svg'
-import ChanelCompactPowder4 from '../../assets/CompactPower/ChanelCompactPowder4.svg'
-import ProductsList from './ProductsList';
+import CompactPowerBg from '../../../assets/CompactPower/CompactPowerBg.svg'
+import GGCompactPowder from '../../../assets/CompactPower/GGCompactPowder.svg'
+import CamelCompactpowder from '../../../assets/CompactPower/CamelCompactpowder.svg'
+import ChanelCompactPowder from '../../../assets/CompactPower/ChanelCompactPowder.svg'
+import ChanelGlossyCompact from '../../../assets/CompactPower/ChanelGlossyCompact.svg'
+import ChanelCompactPowder2 from '../../../assets/CompactPower/ChanelCompactPowder2.svg'
+import PatrickTaCompactPowder from '../../../assets/CompactPower/PatrickTaCompactPowder.svg'
+import ChanelCompactPowder3 from '../../../assets/CompactPower/ChanelCompactPowder3.svg'
+import LamerCompactPowder from '../../../assets/CompactPower/LamerCompactPowder.svg'
+import ChanelCompactPowder4 from '../../../assets/CompactPower/ChanelCompactPowder4.svg'
+import ProductsList from '../ProductsList';
 
 const CompactPower = () => {
     const [products] = useState([
@@ -18,55 +18,63 @@ const CompactPower = () => {
         name: "GGCompactPowder",
         price: "250",
         image: GGCompactPowder,
-        link: '/',
+        link: '/GGCompactPowder',
       },
       {
         id: 2,
         name: "CamelCompactpowder",
         price: "250",
         image: CamelCompactpowder,
+        link: '/CamelCompactpowder',
       },
       {
         id: 3,
         name: "ChanelCompactPowder",
         price: "1500",
         image: ChanelCompactPowder,
+        link: '/ChanelCompactPowder',
       },
       {
         id: 4,
         name: "ChanelGlossyCompact",
         price: "250",
         image: ChanelGlossyCompact,
+        link: '/ChanelGlossyCompact',
       },
       {
         id: 5,
         name: "ChanelCompactPowder2",
         price: "250",
         image: ChanelCompactPowder2,
+        link: '/ChanelCompactPowder2',
       },
       {
         id: 6,
         name: "PatrickTaCompactPowder",
         price: "1500",
         image: PatrickTaCompactPowder,
+        link: '/PatrickTaCompactPowder',
       },
       {
         id: 7,
         name: "ChanelCompactPowder3",
         price: "250",
         image: ChanelCompactPowder3,
+        link: '/ChanelCompactPowder3',
       },
       {
         id: 8,
         name: "LamerCompactPowder",
         price: "250",
         image: LamerCompactPowder,
+        link: '/LamerCompactPowder',
       },
       {
         id: 9,
         name: "ChanelCompactPowder4",
         price: "1500",
         image: ChanelCompactPowder4,
+        link: '/ChanelCompactPowder4',
       },
       ]);
 

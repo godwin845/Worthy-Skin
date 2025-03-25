@@ -1,4 +1,3 @@
-// src/components/Auth/Login.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import LoginBg from '../../assets/LoginBg.svg'
@@ -11,7 +10,6 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   const navigate = useNavigate();
-  // const dispatch = useDispatch();
 
   const handleSubmit = async (e) => {
     e.preventDefault();

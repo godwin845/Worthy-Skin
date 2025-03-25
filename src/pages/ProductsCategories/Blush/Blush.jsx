@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
-import BlushBg from '../../assets/Blush/BlushBg.svg'
-import SheGlamPinkBlush from '../../assets/Blush/SheGlamPinkBlush.svg'
-import BobbiNudeBlush from '../../assets/Blush/BobbiNudeBlush.svg'
-import RareBeautyPinkBlush from '../../assets/Blush/RareBeautyPinkBlush.svg'
-import SheGlamNudeBlush from '../../assets/Blush/SheGlamNudeBlush.svg'
-import HudaBeautyPinkBlush from '../../assets/Blush/HudaBeautyPinkBlush.svg'
-import ChantecaillePinkBlush from '../../assets/Blush/ChantecaillePinkBlush.svg'
-import GGBabyPinkBlush from '../../assets/Blush/GGBabyPinkBlush.svg'
-import ShimmerBlush from '../../assets/Blush/ShimmerBlush.svg'
-import RhodeBlush from '../../assets/Blush/RhodeBlush.svg'
-import ProductsList from './ProductsList';
+import BlushBg from '../../../assets/Blush/BlushBg.svg'
+import SheGlamPinkBlush from '../../../assets/Blush/SheGlamPinkBlush.svg'
+import BobbiNudeBlush from '../../../assets/Blush/BobbiNudeBlush.svg'
+import RareBeautyPinkBlush from '../../../assets/Blush/RareBeautyPinkBlush.svg'
+import SheGlamNudeBlush from '../../../assets/Blush/SheGlamNudeBlush.svg'
+import HudaBeautyPinkBlush from '../../../assets/Blush/HudaBeautyPinkBlush.svg'
+import ChantecaillePinkBlush from '../../../assets/Blush/ChantecaillePinkBlush.svg'
+import GGBabyPinkBlush from '../../../assets/Blush/GGBabyPinkBlush.svg'
+import ShimmerBlush from '../../../assets/Blush/ShimmerBlush.svg'
+import RhodeBlush from '../../../assets/Blush/RhodeBlush.svg'
+import ProductsList from '../ProductsList';
 
 const Blush = () => {
     const [products] = useState([
         {
           id: 1,
           name: "SheGlamPinkBlush",
-          price: "250",
+          price: "250", 
           image: SheGlamPinkBlush,
           link: '/',
         },
