@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import CartPage from './pages/Cart/Cart';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
@@ -7,12 +8,12 @@ import User from './pages/Auth/User';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
-
 import About from './components/About/About';
+
 import Products from './pages/Products/Products';
+
 import Foundation from './pages/ProductsCategories/Foundation/Foundation';
-import CompactPower from './pages/ProductsCategories/CompactPower/CompactPower';
-import GGCompactPowder from './pages/ProductsCategories/CompactPower/GGCompactPowder';
+
 import MsAsamLightfoundation from './pages/ProductsCategories/Foundation/MsAsamLightfoundation';
 import N7LightFoundation from './pages/ProductsCategories/Foundation/N7LightFoundation';
 import ICanLightFoundation from './pages/ProductsCategories/Foundation/ICanLightFoundation';
@@ -22,6 +23,10 @@ import MarsMediumFoundation from './pages/ProductsCategories/Foundation/MarsMedi
 import BaimsDarkFoundation from './pages/ProductsCategories/Foundation/BaimsDarkFoundation';
 import MarsDarkFoundation from './pages/ProductsCategories/Foundation/MarsDarkFoundation';
 import GodSDarkFoundation from './pages/ProductsCategories/Foundation/GodSDarkFoundation';
+
+import CompactPower from './pages/ProductsCategories/CompactPower/CompactPower';
+
+import GGCompactPowder from './pages/ProductsCategories/CompactPower/GGCompactPowder';
 import CamelCompactpowder from './pages/ProductsCategories/CompactPower/CamelCompactpowder';
 import ChanelCompactPowder from './pages/ProductsCategories/CompactPower/ChanelCompactPowder';
 import ChanelGlossyCompact from './pages/ProductsCategories/CompactPower/ChanelGlossyCompact';
@@ -31,7 +36,9 @@ import ChanelCompactPowder3 from './pages/ProductsCategories/CompactPower/Chanel
 import LamerCompactPowder from './pages/ProductsCategories/CompactPower/LamerCompactPowder';
 import ChanelCompactPowder4 from './pages/ProductsCategories/CompactPower/ChanelCompactPowder4';
 import FentyBeautylipstick from './pages/ProductsCategories/Lipstick/FentyBeautylipstick';
+
 import Lipstick from './pages/ProductsCategories/Lipstick/Lipstick';
+
 import Smachboxlipstick from './pages/ProductsCategories/Lipstick/Smachboxlipstick';
 import Naslipstick from './pages/ProductsCategories/Lipstick/Naslipstick';
 import GGNudeshadelipstick from './pages/ProductsCategories/Lipstick/GGNudeshadelipstick';
@@ -40,7 +47,9 @@ import PatrickTaNudeShade from './pages/ProductsCategories/Lipstick/PatrickTaNud
 import GCDarkRedshadelipstick from './pages/ProductsCategories/Lipstick/GCDarkRedshadelipstick';
 import Laminalightredshade from './pages/ProductsCategories/Lipstick/Laminalightredshade';
 import ChanelRoyaredLipstick from './pages/ProductsCategories/Lipstick/ChanelRoyaredLipstick';
+
 import Mascara from './pages/ProductsCategories/Mascara/Mascara';
+
 import MaybellineSkyHighMascara from './pages/ProductsCategories/Mascara/MaybellineSkyHighMascara';
 import MaybellineLashSensaMascara from './pages/ProductsCategories/Mascara/MaybellineLashSensaMascara';
 import GucciMascara from './pages/ProductsCategories/Mascara/GucciMascara';
@@ -50,7 +59,9 @@ import GucciMascara2 from './pages/ProductsCategories/Mascara/GucciMascara2';
 import MarsMascara from './pages/ProductsCategories/Mascara/MarsMascara';
 import DiorMascara from './pages/ProductsCategories/Mascara/DiorMascara';
 import IliaMascara from './pages/ProductsCategories/Mascara/IliaMascara';
+
 import Concealer from './pages/ProductsCategories/Concealer/Concealer';
+
 import EsteeLauderConcealer from './pages/ProductsCategories/Concealer/EsteeLauderConcealer';
 import CharlotteTilburyConcealer from './pages/ProductsCategories/Concealer/CharlotteTilburyConcealer';
 import MaybellineConcealer from './pages/ProductsCategories/Concealer/MaybellineConcealer';
@@ -60,7 +71,9 @@ import TarteCocealer from './pages/ProductsCategories/Concealer/TarteCocealer';
 import NYXDoubleStickConcealer from './pages/ProductsCategories/Concealer/NYXDoubleStickConcealer';
 import MaybellineLightConcealer from './pages/ProductsCategories/Concealer/MaybellineLightConcealer';
 import SaieCoceale from './pages/ProductsCategories/Concealer/SaieCoceale';
+
 import Eyeliner from './pages/ProductsCategories/Eyeliner/Eyeliner';
+
 import PrettyEyesEyeliner from './pages/ProductsCategories/Eyeliner/PrettyEyesEyeliner';
 import MarsEyeliner from './pages/ProductsCategories/Eyeliner/MarsEyeliner';
 import MaybellineColossal from './pages/ProductsCategories/Eyeliner/MaybellineColossal';
