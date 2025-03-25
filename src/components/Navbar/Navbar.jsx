@@ -25,17 +25,13 @@ const Navbar = () => {
           </h1>
         </div>
 
-       <div className="lg:hidden ml-40" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? (
-            <FiX size={32} />
-          ) : (
+       <div className="lg:hidden ml-40" onClick={() => setMenuOpen(true)}>
             <FiMenu size={32} />
-          )}
         </div>
         
         </div>
 
-      <div className="flex justify-between items-center p-4 ml-40">
+      <div className="flex justify-between items-center ml-45">
 
         <div className="hidden lg:flex items-center gap-5">
           <Link to="/login">
@@ -74,9 +70,10 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`lg:hidden ${menuOpen ? 'block' : 'hidden'} bg-[#e99662] text-black p-4`}
+        className={`absolute top-0 w-full lg:hidden ${menuOpen ? 'block animate__animated animate__fadeInDownBig' : 'hidden'} bg-[#e99662] text-black p-4`}
       >
         <ul className="space-y-4 text-center">
+        <FiX className='ml-80' onClick={() => setMenuOpen(false)} size={32} />
           <li>
             <Link to="/login" className="text-xl" onClick={() => setMenuOpen(false)}>
               Login
