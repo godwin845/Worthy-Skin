@@ -117,7 +117,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="w-full h-1 lg:outline lg:outline-offset-[-0.50px] outline-black" />
+      <div className="w-[90%] ml-20 lg:outline lg:outline-offset-[-0.50px] outline-black" />
 
     </div>
   );

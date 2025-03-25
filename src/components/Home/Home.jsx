@@ -34,10 +34,10 @@ const Home = () => {
 
       <div>
         
-      <div className='lg:flex lg:justify-between lg:mr-10'>
-        <img className="w-[80%] ml-10 mt-5 lg:w-[500.10px] lg:h-[371px]" src={Img1} />
-        <img className="w-[80%] ml-10 mt-5 lg:w-[494.67px] lg:h-[371px]" src={Img2} />
-        <img className="w-[80%] ml-10 mt-5 lg:w-[494.67px] lg:h-[371px]" src={Img3} />
+      <div className='lg:flex'>
+        <img className="w-[80%] mt-5 lg:w-[570px] lg:h-[400px]" src={Img1} />
+        <img className="w-[80%] mt-5 lg:w-[550px] lg:h-[400px]" src={Img2} />
+        <img className="w-[80%] mt-5 lg:w-[550px] lg:h-[400px]" src={Img3} />
       </div>
 
       <h1 className="absolute top-275 ml-7 lg:absolute lg:top-475 lg:left-140 text-white text-[44px] lg:text-[54px] font-normal font-['Baloo_2']">Summer is Calling!</h1>

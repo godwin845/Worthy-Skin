@@ -31,7 +31,7 @@ const CartPage = () => {
 
   return (
     <div className="bg-[#e99662] p-6 text-center min-h-screen">
-      <h1 className="text-4xl mt-20 mb-6">Your Cart</h1>
+      <h1 className="text-4xl mt-30 mb-6">Your Cart</h1>
       
       {cartItems.length === 0 ? (
         <p className="text-xl mt-40 h-screen">Your cart is empty. Please add some products!</p>

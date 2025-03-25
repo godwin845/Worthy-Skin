@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
-import { addToCart } from '../../redux/cart';
 import CompactPowerBg from '../../assets/CompactPower/CompactPowerBg.svg'
 import GGCompactPowder from '../../assets/CompactPower/GGCompactPowder.svg'
 import CamelCompactpowder from '../../assets/CompactPower/CamelCompactpowder.svg'
@@ -12,6 +9,7 @@ import PatrickTaCompactPowder from '../../assets/CompactPower/PatrickTaCompactPo
 import ChanelCompactPowder3 from '../../assets/CompactPower/ChanelCompactPowder3.svg'
 import LamerCompactPowder from '../../assets/CompactPower/LamerCompactPowder.svg'
 import ChanelCompactPowder4 from '../../assets/CompactPower/ChanelCompactPowder4.svg'
+import ProductsList from './ProductsList';
 
 const CompactPower = () => {
     const [products] = useState([
@@ -72,47 +70,20 @@ const CompactPower = () => {
       },
       ]);
 
-    const dispatch = useDispatch();
-
-    const navigate = useNavigate();
-
-    const handleAddToCart = (product) => {
-        dispatch(addToCart(product));
-        alert(`${product.name} added successfully!`);
-        navigate('/cart')
-    };
-
   return (
     <div>
-        <img className="w-[100%] h-[800px] object-cover" src={CompactPowerBg} />
+        <img className=" lg:w-[100%] lg:h-[800px] lg:object-cover" src={CompactPowerBg} />
 
-        <div className='absolute bottom-10 ml-215'>
-          <div className="ml-20 w-[513px] justify-start text-black text-[70px] font-light font-['Akatab']">Flawless Matte Perfection!</div>
-          <div className="w-[630px] h-[175px] justify-start text-white text-3xl font-semibold font-['Akatab']">Set, smooth, and stay shine-free all day! Our compact powder is designed to give you a natural, airbrushed finish while controlling oil and keeping your makeup fresh. Whether you need a light touch-up or full coverage, it’s your go-to for a flawless look</div>
+        <div className='absolute bottom-165 lg:bottom-50 pl-10 lg:pl-10'>
+          <div className="w-35 lg:w-[623px] lg:h-[276px] justify-start text-black text-sm lg:text-[70px] font-semibold font-['Akatab']">Flawless Coverage, Your Perfect Match</div>
+          <div className="mt-2 lg:mt-0 w-33 lg:w-[626px] lg:h-[175px] justify-start text-white text-[7px] lg:text-3xl font-semibold font-['Akatab']">Achieve a seamless, natural-looking complexion with our foundation, designed to enhance your beauty without feeling heavy. Whether you prefer a matte, dewy, or radiant finish, our formulas provide the perfect balance of coverage and breathability</div>
         </div>
 
-        <div className='pl-5 bg-[#f7a672] p-6'>
-            <h1 className="mt-5 w-full h-[32.45px] justify-start text-black text-[35px] font-normal font-['Akatab']">OUR COMPACT POWDER PRODUCTS</h1>
+        <div className='lg:pl-5 bg-[#f7a672] p-6'>
+            <h1 className="lg:mt-5 w-full h-[32.45px] justify-start text-black text-[24px] lg:text-[35px] font-normal font-['Akatab']">OUR FOUNDATION PRODUCTS</h1>
 
-            <div className='mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
-            {products.map((product) => (
-                
-                <div key={product.id} className='p-5 hover:shadow-2xl hover:rounded-4xl text-center'>
-    
-                   <Link to={product.link}>
-                    <img className="mt-15 object-cover w-full h-[350px] rounded-[35px]" src={product.image} alt={product.name} />
-                   </Link>
-    
-                    <h1 className="mt-5 w-full h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">{product.name}</h1>
-    
-                    <p className="h-[78.29px] justify-start text-black text-[32px] font-normal font-['Akshar']">₹{product.price}</p>
-    
-                    <button onClick={() => handleAddToCart(product)} className="w-[222px] h-16 relative bg-[#f7a672] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
-                        <div className="left-[43px] top-[11px] absolute justify-start text-black text-3xl font-bold font-['Akatab']">Add to cart</div>
-                    </button>
-                </div>
-                ))}
-            </div>
+            <ProductsList data={products} />
+
         </div>
     </div>
   )
