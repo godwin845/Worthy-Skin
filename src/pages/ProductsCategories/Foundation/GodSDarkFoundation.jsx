@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import GodsDarkFoundationImage from '../../../assets/Foundation/GodsDarkFoundation.svg'
+import GodsDarkFoundationImage from '../../../assets/Foundation/GodSDarkFoundation.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const GodSDarkFoundation = () => {
@@ -9,7 +9,7 @@ const GodSDarkFoundation = () => {
         name: "Gods Dark Foundation",
         price: "300",
         DiscountPrice: "250",
-        image: GodSDarkFoundationImage,
+        image: GodsDarkFoundationImage,
       },
   ]);
   

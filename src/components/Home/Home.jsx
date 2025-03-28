@@ -10,10 +10,13 @@ import Img2 from '../../assets/Frame/img2.svg';
 import Img3 from '../../assets/Frame/img3.svg';
 import Products from './Products';
 import Shades from './Shades';
+import WorthySkinChatBot from '../../pages/Products/ChatBot';
 
 const Home = () => {
   return (
     <div className='bg-[#864523]'>
+      
+      <WorthySkinChatBot />
 
       <img className="lg:w-[100%] lg:h-[886px] object-cover" src={bgImage} />
       

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import kikoBlueEyelinerImage from '../../../assets/Eyeliner/kikoBlueEyeliner.svg'
+import kikoBlueEyelinerImage from '../../../assets/Eyeliner/KikoBlueEyeliner.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const KikoBlueEyeliner = () => {

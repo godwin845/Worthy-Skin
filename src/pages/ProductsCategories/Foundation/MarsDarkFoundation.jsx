@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import MarsDarkFoundationImage from '../../../assets/Foundation/MArsDarkFoundation.svg'
+import MarsDarkFoundationImage from '../../../assets/Foundation/MarsDarkFoundation.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const MarsDarkFoundation = () => {
