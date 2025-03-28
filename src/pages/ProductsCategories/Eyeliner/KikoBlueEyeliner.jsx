@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import kikoBlueEyelinerImage from '../../../assets/Eyeliner/kikoBlueEyeliner.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const KikoBlueEyeliner = () => {
   const [product] = useState([
       {
         id: 1,
-        name: "Ms Asam Light foundation",
+        name: "Kiko Blue Eyyeliner",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundationImage,
+        image: kikoBlueEyelinerImage,
       },
   ]);
   
@@ -17,12 +17,12 @@ const KikoBlueEyeliner = () => {
     {
       id: 1,
       name: 'Type',
-      description: 'description',
+      description: 'Gel',
     },
     {
       id: 2,
-      name: 'Liquid foundation',
-      description: 'description',
+      name: 'Finish',
+      description: 'Matte',
     },
     {
       id: 3,
@@ -32,13 +32,13 @@ const KikoBlueEyeliner = () => {
     {
       id: 4,
       name: 'Net quantity',
-      description: 'All skin type',
+      description: '80ml',
     },
   ]);
 
   return (
     <div className='bg-[#f7a672] p-1 h-full'>
-      <h1 className='mt-35 text-4xl ml-10'>Ms Asam Light foundation</h1>
+      <h1 className='mt-35 text-4xl ml-10'>Kiko Blue Eyeliner</h1>
 
       <div className='flex'>
         
@@ -47,7 +47,13 @@ const KikoBlueEyeliner = () => {
         <div>
           <div className='ml-10'>
             <h1 className='mt-0 text-4xl text-center ml-50'>Product Description</h1>
-            <p className='w-[80%] ml-50 mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste facilis ipsam fugiat voluptatibus illum quas repellat commodi quibusdam exercitationem velit adipisci porro eius incidunt officia consequatur voluptates inventore at impedit, sed a provident aspernatur hic. Rem aspernatur debitis magnam deserunt eligendi, cumque modi molestiae suscipit. Quas odio fugiat nobis blanditiis vitae voluptate magnam nesciunt amet ex ea obcaecati officia, delectus aliquid at numquam pariatur quidem deleniti atque beatae accusantium quo. Necessitatibus ab veritatis alias. Perferendis vel, vitae nemo quas nostrum, optio accusamus quod dolorum porro tenetur harum, voluptates laudantium maiores illum. At nam ducimus perspiciatis corporis sed voluptatum adipisci?</p>
+            <p className='w-[80%] ml-50 mt-10'>Enhance your eyes with a high-definition, long-lasting eyeliner that delivers intense pigmentation and effortless application. Designed for precision, this formula glides smoothly to create sharp, defined lines or a sultry, smoky effect. Whether you prefer a classic wing or a bold, dramatic look, this eyeliner offers the perfect balance of control and creativity.
+
+🌟 Key Features:
+✔ Richly Pigmented: Delivers deep, intense color in just one stroke.
+✔ Smooth & Precise: Ultra-fine tip ensures effortless application.
+✔ Long-Lasting & Smudge-Proof: Stays flawless for hours without fading.
+✔ Waterproof Formula: Resists sweat, humidity, and tears.</p>
             
             <h1 className='mt-5 text-3xl ml-50'>Product Details</h1>
 

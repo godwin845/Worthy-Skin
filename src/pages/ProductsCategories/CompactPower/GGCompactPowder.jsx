@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import GGCompactPowderImage from '../../../assets/CompactPower/GGCompactPowder.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const GGCompactPowder = () => {
   const [product] = useState([
       {
         id: 1,
-        name: "Ms Asam Light foundation",
+        name: "GG CompactPowder",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundationImage,
+        image: GGCompactPowderImage,
       },
   ]);
   
   const [table] = useState([
     {
       id: 1,
-      name: 'Type',
-      description: 'description',
+      name: 'Texture',
+      description: 'Light Weight',
     },
     {
       id: 2,
-      name: 'Liquid foundation',
-      description: 'description',
+      name: 'Finish',
+      description: 'Matte',
     },
     {
       id: 3,
@@ -32,13 +32,13 @@ const GGCompactPowder = () => {
     {
       id: 4,
       name: 'Net quantity',
-      description: 'All skin type',
+      description: '50gm',
     },
   ]);
 
   return (
     <div className='bg-[#f7a672] p-1 h-full'>
-      <h1 className='mt-35 text-4xl ml-10'>Ms Asam Light foundation</h1>
+      <h1 className='mt-35 text-4xl ml-10'>GG Compact Powder</h1>
 
       <div className='flex'>
         
@@ -47,7 +47,13 @@ const GGCompactPowder = () => {
         <div>
           <div className='ml-10'>
             <h1 className='mt-0 text-4xl text-center ml-50'>Product Description</h1>
-            <p className='w-[80%] ml-50 mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste facilis ipsam fugiat voluptatibus illum quas repellat commodi quibusdam exercitationem velit adipisci porro eius incidunt officia consequatur voluptates inventore at impedit, sed a provident aspernatur hic. Rem aspernatur debitis magnam deserunt eligendi, cumque modi molestiae suscipit. Quas odio fugiat nobis blanditiis vitae voluptate magnam nesciunt amet ex ea obcaecati officia, delectus aliquid at numquam pariatur quidem deleniti atque beatae accusantium quo. Necessitatibus ab veritatis alias. Perferendis vel, vitae nemo quas nostrum, optio accusamus quod dolorum porro tenetur harum, voluptates laudantium maiores illum. At nam ducimus perspiciatis corporis sed voluptatum adipisci?</p>
+            <p className='w-[80%] ml-50 mt-10'>Experience luxury with the Chanel Rose Compact Powder, a finely milled pressed powder designed to enhance your natural radiance with a soft, rosy glow. Infused with skin-loving ingredients, this compact powder provides a smooth, flawless finish while keeping your complexion fresh and luminous throughout the day.
+
+✨ Key Features & Benefits:
+✔ Soft Rosy Glow: Enhances skin with a delicate, radiant finish.
+✔ Feather-Light Texture: Ultra-fine powder blends seamlessly for a second-skin feel.
+✔ Buildable Coverage: Can be used alone for a sheer, natural look or over foundation for a perfected finish.
+✔ Oil Control & Hydration Balance: Absorbs excess shine while keeping skin hydrated.</p>
             
             <h1 className='mt-5 text-3xl ml-50'>Product Details</h1>
 

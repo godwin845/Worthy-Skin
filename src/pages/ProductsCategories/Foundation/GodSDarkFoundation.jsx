@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import GodsDarkFoundationImage from '../../../assets/Foundation/GodsDarkFoundation.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const GodSDarkFoundation = () => {
   const [product] = useState([
       {
         id: 1,
-        name: "Ms Asam Light foundation",
+        name: "Gods Dark Foundation",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundationImage,
+        image: GodSDarkFoundationImage,
       },
   ]);
   
   const [table] = useState([
     {
       id: 1,
-      name: 'Type',
-      description: 'description',
+      name: 'Texture',
+      description: 'Dark',
     },
     {
       id: 2,
-      name: 'Liquid foundation',
-      description: 'description',
+      name: 'Type ',
+      description: 'Liquid',
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const GodSDarkFoundation = () => {
     {
       id: 4,
       name: 'Net quantity',
-      description: 'All skin type',
+      description: '50ml',
     },
   ]);
 

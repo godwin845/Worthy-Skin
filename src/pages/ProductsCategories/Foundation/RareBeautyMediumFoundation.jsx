@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import RareBeautyMediumFoundationImage from '../../../assets/Foundation/RareBeautyMediumFoundation.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const RareBeautyMediumFoundation = () => {
   const [product] = useState([
       {
         id: 1,
-        name: "Ms Asam Light foundation",
+        name: "Rare Beauty Medium foundation",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundationImage,
+        image: RareBeautyMediumFoundationImage,
       },
   ]);
   
   const [table] = useState([
     {
       id: 1,
-      name: 'Type',
-      description: 'description',
+      name: 'Texture',
+      description: 'Medium',
     },
     {
       id: 2,
-      name: 'Liquid foundation',
-      description: 'description',
+      name: 'Type ',
+      description: 'Liquid',
     },
     {
       id: 3,
@@ -32,13 +32,13 @@ const RareBeautyMediumFoundation = () => {
     {
       id: 4,
       name: 'Net quantity',
-      description: 'All skin type',
+      description: '50ml',
     },
   ]);
 
   return (
     <div className='bg-[#f7a672] p-1 h-full'>
-      <h1 className='mt-35 text-4xl ml-10'>Ms Asam Light foundation</h1>
+      <h1 className='mt-35 text-4xl ml-10'>Rare Beauty Medium foundation</h1>
 
       <div className='flex'>
         
@@ -47,7 +47,17 @@ const RareBeautyMediumFoundation = () => {
         <div>
           <div className='ml-10'>
             <h1 className='mt-0 text-4xl text-center ml-50'>Product Description</h1>
-            <p className='w-[80%] ml-50 mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste facilis ipsam fugiat voluptatibus illum quas repellat commodi quibusdam exercitationem velit adipisci porro eius incidunt officia consequatur voluptates inventore at impedit, sed a provident aspernatur hic. Rem aspernatur debitis magnam deserunt eligendi, cumque modi molestiae suscipit. Quas odio fugiat nobis blanditiis vitae voluptate magnam nesciunt amet ex ea obcaecati officia, delectus aliquid at numquam pariatur quidem deleniti atque beatae accusantium quo. Necessitatibus ab veritatis alias. Perferendis vel, vitae nemo quas nostrum, optio accusamus quod dolorum porro tenetur harum, voluptates laudantium maiores illum. At nam ducimus perspiciatis corporis sed voluptatum adipisci?</p>
+            <p className='w-[80%] ml-50 mt-10'>Achieve a flawless, natural-looking complexion with this lightweight and buildable foundation. Designed to provide a smooth, even finish, it blends seamlessly into the skin, covering imperfections while maintaining a breathable feel. Infused with hydrating ingredients, it ensures long-lasting comfort and a radiant glow throughout the day.
+
+Key Features:
+
+Lightweight, breathable formula
+
+Buildable coverage (sheer to full)
+
+Hydrates and nourishes the skin
+
+Long-lasting, sweat-proof, and transfer-resistant</p>
             
             <h1 className='mt-5 text-3xl ml-50'>Product Details</h1>
 

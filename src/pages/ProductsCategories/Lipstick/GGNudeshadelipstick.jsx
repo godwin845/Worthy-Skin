@@ -1,44 +1,44 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import GGNudeshadelipstickImage from '../../../assets/Lipstick/GGNudeshadelipstick.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const GGNudeshadelipstick = () => {
   const [product] = useState([
       {
         id: 1,
-        name: "Ms Asam Light foundation",
+        name: "GG Nude Shade",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundationImage,
+        image: GGNudeshadelipstickImage,
       },
   ]);
   
   const [table] = useState([
     {
       id: 1,
-      name: 'Type',
-      description: 'description',
+      name: 'Texture',
+      description: 'Creamy',
     },
     {
       id: 2,
-      name: 'Liquid foundation',
-      description: 'description',
+      name: 'Color',
+      description: 'Nude',
     },
     {
       id: 3,
-      name: 'Skin Type',
-      description: 'All skin type',
+      name: 'Finish',
+      description: 'Creamy',
     },
     {
       id: 4,
       name: 'Net quantity',
-      description: 'All skin type',
+      description: '50gm',
     },
   ]);
 
   return (
     <div className='bg-[#f7a672] p-1 h-full'>
-      <h1 className='mt-35 text-4xl ml-10'>Ms Asam Light foundation</h1>
+      <h1 className='mt-35 text-4xl ml-10'>GG Nude Shade Lipstick</h1>
 
       <div className='flex'>
         
@@ -47,7 +47,17 @@ const GGNudeshadelipstick = () => {
         <div>
           <div className='ml-10'>
             <h1 className='mt-0 text-4xl text-center ml-50'>Product Description</h1>
-            <p className='w-[80%] ml-50 mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste facilis ipsam fugiat voluptatibus illum quas repellat commodi quibusdam exercitationem velit adipisci porro eius incidunt officia consequatur voluptates inventore at impedit, sed a provident aspernatur hic. Rem aspernatur debitis magnam deserunt eligendi, cumque modi molestiae suscipit. Quas odio fugiat nobis blanditiis vitae voluptate magnam nesciunt amet ex ea obcaecati officia, delectus aliquid at numquam pariatur quidem deleniti atque beatae accusantium quo. Necessitatibus ab veritatis alias. Perferendis vel, vitae nemo quas nostrum, optio accusamus quod dolorum porro tenetur harum, voluptates laudantium maiores illum. At nam ducimus perspiciatis corporis sed voluptatum adipisci?</p>
+            <p className='w-[80%] ml-50 mt-10'>Elevate your look with this richly pigmented, long-lasting lipstick that delivers vibrant color and a smooth, velvety finish. Designed for all-day wear, it glides effortlessly onto the lips, providing intense hydration and a comfortable feel without smudging or drying out.
+
+Key Features:
+
+Highly pigmented for bold, rich color
+
+Creamy, lightweight texture for effortless application
+
+Long-lasting, smudge-proof, and non-drying formula
+
+Enriched with moisturizing ingredients to keep lips soft and supple</p>
             
             <h1 className='mt-5 text-3xl ml-50'>Product Details</h1>
 

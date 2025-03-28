@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import CamelCompactpowderImage from '../../../assets/CompactPower/CamelCompactpowder.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const CamelCompactpowder = () => {
   const [product] = useState([
       {
         id: 1,
-        name: "Ms Asam Light foundation",
+        name: "Camel Compact Powder",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundationImage,
+        image: CamelCompactpowderImage,
       },
   ]);
   
   const [table] = useState([
     {
       id: 1,
-      name: 'Type',
-      description: 'description',
+      name: 'Texture',
+      description: 'Light weight',
     },
     {
       id: 2,
-      name: 'Liquid foundation',
-      description: 'description',
+      name: 'Finish',
+      description: 'Nude Matte',
     },
     {
       id: 3,
@@ -32,13 +32,13 @@ const CamelCompactpowder = () => {
     {
       id: 4,
       name: 'Net quantity',
-      description: 'All skin type',
+      description: '50gm',
     },
   ]);
 
   return (
     <div className='bg-[#f7a672] p-1 h-full'>
-      <h1 className='mt-35 text-4xl ml-10'>Ms Asam Light foundation</h1>
+      <h1 className='mt-35 text-4xl ml-10'>Camel Compact Powder</h1>
 
       <div className='flex'>
         
@@ -47,7 +47,14 @@ const CamelCompactpowder = () => {
         <div>
           <div className='ml-10'>
             <h1 className='mt-0 text-4xl text-center ml-50'>Product Description</h1>
-            <p className='w-[80%] ml-50 mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste facilis ipsam fugiat voluptatibus illum quas repellat commodi quibusdam exercitationem velit adipisci porro eius incidunt officia consequatur voluptates inventore at impedit, sed a provident aspernatur hic. Rem aspernatur debitis magnam deserunt eligendi, cumque modi molestiae suscipit. Quas odio fugiat nobis blanditiis vitae voluptate magnam nesciunt amet ex ea obcaecati officia, delectus aliquid at numquam pariatur quidem deleniti atque beatae accusantium quo. Necessitatibus ab veritatis alias. Perferendis vel, vitae nemo quas nostrum, optio accusamus quod dolorum porro tenetur harum, voluptates laudantium maiores illum. At nam ducimus perspiciatis corporis sed voluptatum adipisci?</p>
+            <p className='w-[80%] ml-50 mt-10'>Achieve a smooth, shine-free, and even-toned complexion with Camel Compact Powder. Designed for everyday wear, this lightweight formula blends effortlessly, controls excess oil, and sets your makeup for a long-lasting, natural look.
+
+✨ Key Features & Benefits:
+✔ Matte Finish: Controls shine and gives a soft, airbrushed look.
+✔ Lightweight Formula: Feels comfortable on the skin without clogging pores.
+✔ Buildable Coverage: Provides sheer to medium coverage for a flawless appearance.
+✔ Oil-Control & Sweat-Resistant: Keeps skin fresh and oil-free for hours.
+✔ Smooth Texture: Glides on seamlessly for a velvety soft touch.</p>
             
             <h1 className='mt-5 text-3xl ml-50'>Product Details</h1>
 

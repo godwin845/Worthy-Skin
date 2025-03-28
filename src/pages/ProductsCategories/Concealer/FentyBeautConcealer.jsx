@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import FentyBeautConcealerImage from '../../../assets/Concealer/FentyBeautConcealer.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const FentyBeautConcealer = () => {
   const [product] = useState([
       {
         id: 1,
-        name: "Ms Asam Light foundation",
+        name: "Fenty Beauty Concealer",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundationImage,
+        image: FentyBeautConcealerImage,
       },
   ]);
   
@@ -17,12 +17,12 @@ const FentyBeautConcealer = () => {
     {
       id: 1,
       name: 'Type',
-      description: 'description',
+      description: 'Cream',
     },
     {
       id: 2,
-      name: 'Liquid foundation',
-      description: 'description',
+      name: 'Finish',
+      description: 'Coverage',
     },
     {
       id: 3,
@@ -32,13 +32,13 @@ const FentyBeautConcealer = () => {
     {
       id: 4,
       name: 'Net quantity',
-      description: 'All skin type',
+      description: '50gm',
     },
   ]);
 
   return (
     <div className='bg-[#f7a672] p-1 h-full'>
-      <h1 className='mt-35 text-4xl ml-10'>Ms Asam Light foundation</h1>
+      <h1 className='mt-35 text-4xl ml-10'>Fenty Beauty Concealer</h1>
 
       <div className='flex'>
         
@@ -47,7 +47,13 @@ const FentyBeautConcealer = () => {
         <div>
           <div className='ml-10'>
             <h1 className='mt-0 text-4xl text-center ml-50'>Product Description</h1>
-            <p className='w-[80%] ml-50 mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste facilis ipsam fugiat voluptatibus illum quas repellat commodi quibusdam exercitationem velit adipisci porro eius incidunt officia consequatur voluptates inventore at impedit, sed a provident aspernatur hic. Rem aspernatur debitis magnam deserunt eligendi, cumque modi molestiae suscipit. Quas odio fugiat nobis blanditiis vitae voluptate magnam nesciunt amet ex ea obcaecati officia, delectus aliquid at numquam pariatur quidem deleniti atque beatae accusantium quo. Necessitatibus ab veritatis alias. Perferendis vel, vitae nemo quas nostrum, optio accusamus quod dolorum porro tenetur harum, voluptates laudantium maiores illum. At nam ducimus perspiciatis corporis sed voluptatum adipisci?</p>
+            <p className='w-[80%] ml-50 mt-10'>Unveil a radiant, even-toned complexion with the Fenty Beauty Radiance Concealer, a lightweight yet high-coverage formula designed to camouflage imperfections while nourishing your skin. This luxurious concealer blends effortlessly, brightening under-eyes, covering blemishes, and smoothing skin texture for a naturally flawless finish.
+
+✨ Key Features & Benefits:
+✔ Full Yet Breathable Coverage: Hides dark circles, redness, and blemishes without feeling heavy.
+✔ Hydrating Formula: Keeps skin fresh and crease-free all day.
+✔ Long-Lasting Wear: Sweat and humidity-resistant, ensuring a flawless look for hours.
+✔ Smooth & Blendable: Ultra-creamy texture melts seamlessly into the skin.</p>
             
             <h1 className='mt-5 text-3xl ml-50'>Product Details</h1>
 

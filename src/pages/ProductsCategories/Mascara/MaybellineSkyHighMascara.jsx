@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import MsAsamLightfoundationImage from '../../../assets/Foundation/MsAsamLightfoundation.svg'
+import MaybellineSkyHighMascaraImage from '../../../assets/Mascara/MaybellineSkyHighMascara.svg'
 import ProductsDescription from '../ProductsDescription';
 
 const MaybellineSkyHighMascara = () => {
   const [product] = useState([
       {
         id: 1,
-        name: "Ms Asam Light foundation",
+        name: "MaybellineSkyHighMascara",
         price: "300",
         DiscountPrice: "250",
-        image: MsAsamLightfoundationImage,
+        image: MaybellineSkyHighMascaraImage,
       },
   ]);
   
@@ -17,28 +17,28 @@ const MaybellineSkyHighMascara = () => {
     {
       id: 1,
       name: 'Type',
-      description: 'description',
+      description: 'Water Proof',
     },
     {
       id: 2,
-      name: 'Liquid foundation',
-      description: 'description',
+      name: 'Color',
+      description: 'Black',
     },
     {
       id: 3,
-      name: 'Skin Type',
-      description: 'All skin type',
+      name: 'Brush',
+      description: 'Curve',
     },
     {
       id: 4,
       name: 'Net quantity',
-      description: 'All skin type',
+      description: '80gm',
     },
   ]);
 
   return (
     <div className='bg-[#f7a672] p-1 h-full'>
-      <h1 className='mt-35 text-4xl ml-10'>Ms Asam Light foundation</h1>
+      <h1 className='mt-35 text-4xl ml-10'>Maybelline Sky High Mascara</h1>
 
       <div className='flex'>
         
@@ -47,7 +47,11 @@ const MaybellineSkyHighMascara = () => {
         <div>
           <div className='ml-10'>
             <h1 className='mt-0 text-4xl text-center ml-50'>Product Description</h1>
-            <p className='w-[80%] ml-50 mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste facilis ipsam fugiat voluptatibus illum quas repellat commodi quibusdam exercitationem velit adipisci porro eius incidunt officia consequatur voluptates inventore at impedit, sed a provident aspernatur hic. Rem aspernatur debitis magnam deserunt eligendi, cumque modi molestiae suscipit. Quas odio fugiat nobis blanditiis vitae voluptate magnam nesciunt amet ex ea obcaecati officia, delectus aliquid at numquam pariatur quidem deleniti atque beatae accusantium quo. Necessitatibus ab veritatis alias. Perferendis vel, vitae nemo quas nostrum, optio accusamus quod dolorum porro tenetur harum, voluptates laudantium maiores illum. At nam ducimus perspiciatis corporis sed voluptatum adipisci?</p>
+            <p className='w-[80%] ml-50 mt-10'>Enhance your lashes with our high-performance mascara, designed to deliver intense volume, dramatic length, and long-lasting curl. The lightweight, clump-free formula glides smoothly onto your lashes, coating each strand evenly for a fuller, more defined look. Infused with nourishing ingredients like Vitamin E and natural oils, it helps keep your lashes soft and conditioned while preventing flaking or smudging throughout the day.Key Benefits:
+✔ Long-lasting, smudge-proof formula
+✔ Adds volume, length, and curl
+✔ Clump-free, lightweight texture
+✔ Easy to apply and remove</p>
             
             <h1 className='mt-5 text-3xl ml-50'>Product Details</h1>
 
